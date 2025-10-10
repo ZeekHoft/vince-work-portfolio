@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #F8B435;
 }
+
+
+/* 
+1️⃣ Olive Green: #879E58
+2️⃣ Light Yellow: #FBECA9
+3️⃣ Golden Yellow: #F8B435
+4️⃣ Muted Red / Brick: #B15147 */
+
 
 @theme inline {
   --color-background: var(--background);
@@ -14,8 +22,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #879E58;
+    --foreground: #B15147;
   }
 }
 
@@ -23,4 +31,27 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.h1fontChange {
+
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 35px;
+
+
+}
+
+
+.pfontChange {
+
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 24px;
+
+}
+
+.navfontChange {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 24px;
 }
