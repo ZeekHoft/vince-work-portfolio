@@ -22,8 +22,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #879E58;
-    --foreground: #B15147;
+    --background: #e29578;
+    --foreground: #006d77;
   }
 }
 
@@ -43,6 +43,20 @@ body {
 
 }
 
+.h1fontChangeName {
+
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 35px;
+  color: #edf6f9;
+
+
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
 .pfontChange {
 
@@ -51,7 +65,39 @@ body {
 
 }
 
-.navfontChange {
-  font-family: "Times New Roman", Georgia, serif;
-  font-size: 24px;
+.navBackGround {
+
+  background-color: #006d77;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ICONS, IMAGES */
+
+.iconSize {
+  font-size: 35px;
+  margin-bottom: 10px;
+
+}
+
+.circleBorder {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
 }
