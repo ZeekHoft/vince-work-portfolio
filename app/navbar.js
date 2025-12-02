@@ -23,7 +23,7 @@ export default function Header() {
 
                     <Link href="/" className={getLinkClasses("/")}>Home</Link>
                     <Link href="/about" className={getLinkClasses("/about")}>About</Link>
-                    <Link href="/contact" className={getLinkClasses("/contact")}>Contact</Link>
+                    {/* <Link href="/contact" className={getLinkClasses("/contact")}>Contact</Link> */}
                 </div>
                 <div className="text-white font-bold" />
 

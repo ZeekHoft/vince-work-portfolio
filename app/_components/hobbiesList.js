@@ -20,12 +20,14 @@ const HobbiesList = () => {
     return (
         <div  >
 
-            <div style={{ display: 'flex', gap: '10px' }}>
-                <h1 className="h1fontChange"> Here a little bit of what </h1>
-                <h1 className="h1fontChangeName"> I love</h1>
+            <div className="tracking-wide">
+                <h1 className="h1fontChange"> Here a little bit of what
+                    <span className="h1fontChangeName"> I love </span>
+                    <span className="h1fontChange">to do other than coding</span>
+
+                </h1>
 
             </div>
-            <h1 className="h1fontChange"> to do other than coding</h1>
             <br />
             {itemsWithIcons.map((item) => (
                 <div key={item.key} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
