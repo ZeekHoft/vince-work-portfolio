@@ -1,4 +1,4 @@
-import GetFont from './globalfont';
+import myLocalFont from './globalfont';
 
 
 const SocialLink = ({ href, iconSrc, altText, text }) => {
@@ -10,8 +10,8 @@ const SocialLink = ({ href, iconSrc, altText, text }) => {
             rel="noopener noreferrer"
 
             className="flex items-center space-x-2 bgColorWhite rounded-lg p-2 
-                 w-16 hover:w-100 transition-all duration-700 ease-in-out 
-                 shadow-lg hover:shadow-xl group"
+                 w-92 md:w-16 md:hover:w-100 md:transition-all md:duration-700 md:ease-in-out 
+                 md:shadow-lg md:hover:shadow-xl group"
         >
             <img
                 src={iconSrc}
@@ -24,7 +24,7 @@ const SocialLink = ({ href, iconSrc, altText, text }) => {
             <span
 
                 className="textColorGreen text-xl font-semibold whitespace-nowrap 
-                   opacity-0  group-hover:opacity-100 transition-opacity 
+                   md:opacity-0  group-hover:opacity-100 transition-opacity 
                    delay-150"
             >
                 {text}
@@ -37,14 +37,14 @@ export default function Page() {
     return (
         <div >
             <div className="tracking-wide">
-                <h1 className="text-3xl"> Contact me through these
-                    <span className="h1fontChangeName"> media </span>
+                <h1 className="text-3xl"> Contact me through
+                    <span className="h1fontChangeName"> here </span>
 
                 </h1>
 
             </div>
 
-            <div className="flex flex-col gap-10 pt-15 ">
+            <div className="flex flex-col gap-10 pt-5 md: items-center">
 
                 <div className="flex flex-col gap-4">
                     <SocialLink

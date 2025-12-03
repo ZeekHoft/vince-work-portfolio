@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import myLocalFont from './_components/globalfont';
 
 export default function Header() {
     const pathname = usePathname();
@@ -15,7 +16,7 @@ export default function Header() {
 
     return (
 
-        <nav className="fixed top-4 w-screen justify-center items-center px-4 navbar-item">
+        <nav className={` ${myLocalFont.className} fixed top-4 w-screen justify-center items-center px-4 navbar-item`}>
             <div className="flex justify-between items-center w-full max-w-6xl mx-auto  p-3 shadow-lg rounded-lg navBarColor">
                 <div className="text-white font-bold" />
 

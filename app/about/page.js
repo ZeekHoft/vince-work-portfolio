@@ -1,16 +1,16 @@
 import HobbiesList from '../_components/hobbiesList';
 import Contact from '../_components/contact';
-import GetFont from '../_components/globalfont';
+import myLocalFont from '../_components/globalfont';
 
 
 
 
 const ProfilePic = ({ imgSrc, context }) => {
     return (
-        <div className='fixed  top-40 left-10 z-1- hidden md:block'>
+        <div className='flex flex-col md:flex-row items-center justify-center pt-20 pb-20'>
 
             <img
-                className='rounded-full shadow-lg w-100 h-100'
+                className='rounded-full shadow-lg md: w-70 h-70 md: w-100 h-100 '
                 src={imgSrc}
                 context={context}
 
@@ -21,20 +21,27 @@ const ProfilePic = ({ imgSrc, context }) => {
 export default function About() {
     // I added tracking-wider here to increase letter spacing for the whole component.
     return (
-        <div className={`tracking-wider md:flex-column gap-10 p-20 ${GetFont.className}  `}>
+        <div className={`w-full tracking-wider flex-col md:flex-row p-5 md:p-20 ${myLocalFont.className}`}>
             <ProfilePic
+
                 imgSrc="/me2.png"
                 context="profile picture"
             />
-            <div className="flex flex-col md:flex-row items-center justify-center gap-10 p-20">
-                <div className="md:w-1/2 w-full text-center md:text-left">
+            <div className="flex flex-colitems-center justify-center md:flex-row md:pl-30 md:pr-30  ">
+                <div className=" w-full text-center md:text-center">
                     <div style={{ display: 'flex', gap: '10px' }}>
-                        <h1 className="text-3xl"> Hi! I'm </h1>
-                        <h1 className="text-3xl h1fontChangeName"> Francis Vince Jaca</h1>
-                        <h1 className="text-3xl"> I love doing </h1>
+                        <h1 className="text-3xl"> Hi! I'm
+                            <span className="text-3xl h1fontChangeName"> Francis Vince Jaca </span>
+                            <span className="text-3xl ">I love doing </span>
+                            <span className="text-3xl ">Mobile & Software development.</span>
+
+
+
+                        </h1>
+                        <h1 className="text-3xl"> </h1>
 
                     </div>
-                    <h1 className={`text-3xl`}> Mobile & Software development.</h1>
+                    <h1 className={`text-3xl`}> </h1>
 
 
                     <br />
@@ -46,11 +53,13 @@ export default function About() {
                     </p>
                     <br />
 
-                    <div className="grid grid-cols-2 gap-40">
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-40">
 
                         <HobbiesList />
-
-
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <Contact />
 
                     </div>
