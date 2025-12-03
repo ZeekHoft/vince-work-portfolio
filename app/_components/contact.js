@@ -1,5 +1,5 @@
 
-// A reusable component for clarity
+import GetFont from '../_components/myFonts';
 
 
 const SocialLink = ({ href, iconSrc, altText, text }) => {
@@ -10,7 +10,7 @@ const SocialLink = ({ href, iconSrc, altText, text }) => {
             target="_blank"
             rel="noopener noreferrer"
 
-            className="flex items-center space-x-2 colorGreenBG rounded-lg p-2 
+            className="flex items-center space-x-2 bgColorWhite rounded-lg p-2 
                  w-16 hover:w-100 transition-all duration-700 ease-in-out 
                  shadow-lg hover:shadow-xl group"
         >
@@ -24,9 +24,9 @@ const SocialLink = ({ href, iconSrc, altText, text }) => {
 
             <span
 
-                className="text-white text-lg font-semibold whitespace-nowrap 
+                className="textColorGreen text-xl font-semibold whitespace-nowrap 
                    opacity-0  group-hover:opacity-100 transition-opacity 
-                   delay-450"
+                   delay-150"
             >
                 {text}
             </span>
@@ -36,16 +36,16 @@ const SocialLink = ({ href, iconSrc, altText, text }) => {
 
 export default function Page() {
     return (
-        <div>
+        <div >
             <div className="tracking-wide">
-                <h1 className="h1fontChange"> Contact me through these
+                <h1 className="text-3xl"> Contact me through these
                     <span className="h1fontChangeName"> media </span>
 
                 </h1>
 
             </div>
 
-            <div className="flex flex-col gap-10 p-20 ">
+            <div className="flex flex-col gap-10 pt-15 ">
 
                 <div className="flex flex-col gap-4">
                     <SocialLink

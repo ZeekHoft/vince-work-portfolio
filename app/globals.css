@@ -43,7 +43,6 @@ body {
 
 .h1fontChangeName {
   /* font-family: "Times New Roman"; */
-  font-size: 35px;
   color: #edf6f9;
 
 
@@ -61,6 +60,8 @@ body {
   font-size: 24px;
 
 }
+
+
 
 .navBarColor {
   background-color: #006d77;
@@ -124,8 +125,17 @@ body {
 
 
 /* COLORS*/
-.colorGreenBG {
+.bgColorGreen {
   background-color: #006d77;
 
+}
+
+.bgColorWhite {
+  background-color: #edf6f9;
+
+}
+
+.textColorGreen {
+  color: #006d77;
 
 }
