@@ -56,11 +56,9 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-40">
 
                         <HobbiesList />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <Contact />
+                        <div className='pt-20'>
+                            <Contact />
+                        </div>
 
                     </div>
                     <br />
