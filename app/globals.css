@@ -20,12 +20,37 @@
   --font-mono: var(--font-geist-mono);
 }
 
+
+
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #e29578;
-    --foreground: #006d77;
+    --background: #333333;
+    --foreground: #E0E0E0;
   }
 }
+
+
+.COLORS {
+  color: #333333;
+  /* background */
+
+  color: #E0E0E0;
+  /* foreground */
+
+  color: #f1c604;
+  /* specific letter highlight */
+
+  color: #494949;
+  /* nav bar or other  */
+
+  color: #5A5A5A;
+  /* text */
+
+  color: #1d2435
+    /* container */
+}
+
 
 body {
   background: var(--background);
@@ -43,7 +68,7 @@ body {
 
 .h1fontChangeName {
   /* font-family: "Times New Roman"; */
-  color: #edf6f9;
+  color: #f1c604;
 
 
 }
@@ -64,13 +89,13 @@ body {
 
 
 .navBarColor {
-  background-color: #006d77;
+  background-color: #1d2435;
 }
 
 .navBarColorActive {
   /* font-family: "Times New Roman"; */
-  color: #e29578;
-  border-bottom: 4px solid #e29578;
+  color: #f1c604;
+  border-bottom: 4px solid #f1c604;
   font-size: 20px;
 
 }
@@ -108,30 +133,26 @@ body {
 }
 
 
-.navbar-item.active {
-  background-color: #007bff;
-  /* Example: blue background */
-  color: white;
-  /* Example: white text */
-  font-weight: bold;
-  border-radius: 5px;
-  /* Example: rounded corners */
-}
+
 
 
 
 /* COLORS*/
-.bgColorGreen {
-  background-color: #006d77;
+.bgColorYellow {
+  background-color: #f1c604;
 
 }
 
 .bgColorWhite {
-  background-color: #edf6f9;
+  background-color: #f1c604;
 
 }
 
-.textColorGreen {
-  color: #006d77;
+.textColorWhite {
+  color: #E0E0E0;
 
+}
+
+.containerColor {
+  background-color: #1d2435;
 }
