@@ -11,7 +11,7 @@ function Animation({ children }) {
 
             initial={{ opacity: 0, y: 50, marginBottom: -50 }}
             animate={{ opacity: 1, y: 0, marginBottom: 0 }}
-            transition={{ duration: 0.9, ease: "anticipate" }}
+            transition={{ duration: 1.0, ease: "anticipate" }}
 
         // Animation duration of 0.8 seconds
         >
@@ -25,9 +25,9 @@ export function NameAnimation({ children }) {
     return (
         <motion.div
 
-            initial={{ opacity: 0, y: -50, marginBottom: 50 }}
+            initial={{ opacity: 0, y: 100, marginBottom: 100 }}
             animate={{ opacity: 1, y: 0, marginBottom: 0 }}
-            transition={{ duration: 0.7, ease: "anticipate" }}
+            transition={{ duration: 1.0, ease: "anticipate" }}
 
         >
             {children}
@@ -36,6 +36,18 @@ export function NameAnimation({ children }) {
 
 
 export function TextAnimation({ children }) {
+    return (
+        <motion.div
+
+            initial={{ opacity: 0, y: 50, marginBottom: -50 }}
+            animate={{ opacity: 1, y: 0, marginBottom: 0 }}
+            transition={{ duration: 1.0, ease: "anticipate" }}
+
+        >
+            {children}
+        </motion.div>)
+}
+export function NavDropDown({ children }) {
     return (
         <motion.div
 

@@ -5,7 +5,9 @@ import { FaMobileAlt, FaLaptopCode } from "react-icons/fa";
 import { FaPencilRuler, FaUsers } from "react-icons/fa";
 import { FaDatabase, FaServer } from "react-icons/fa";
 import myLocalFont from './globalfont';
-import Animation from "./animation";
+import { NameAnimation, TextAnimation } from "./animation";
+
+
 
 const ServicesList = [
     { key: 'service1', value: 'Mobile App Development', Icon: FaMobileAlt, description: 'Building high-performance native and cross-platform mobile applications.' },
@@ -36,8 +38,7 @@ const Services = () => {
             <div className={`p-4 md:p-10  ${myLocalFont.className}`}>
                 <div className="tracking-wide text-center mb-10">
                     <h1 className="h1fontChangeName text-5xl uppercase inline-block border-b-4 border-orange-500 pb-2">
-                        Services
-
+                        <NameAnimation>Services</NameAnimation>
 
                     </h1>
                 </div>
