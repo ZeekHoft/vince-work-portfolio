@@ -4,23 +4,28 @@ import Contact from '../_components/contact';
 import myLocalFont from '../_components/globalfont';
 import Animation from '../_components/animation';
 import { TextAnimation, NameAnimation } from '../_components/animation';
-
+import { TypingAnimation } from '../_components/animation';
 
 
 const ProfilePic = ({ imgSrc, context }) => {
     return (
 
         // <div className='flex flex-col items-center justify-center pt-20 pb-20  md:flex md:flex-row md: items-left'>
+        <div>
+            <div className='flex justify-center pt-20 md:justify-start md:pt-10'>
 
-        <div className='flex justify-center pt-20 md:justify-start md:pt-10 md:'>
+                <img
+                    className='shadow-lg md: w-60 h-60 md:w-100 md:h-100 '
+                    src={imgSrc}
+                    context={context}
 
-            <img
-                className='shadow-lg md: w-60 h-60 md:w-100 md:h-100 '
-                src={imgSrc}
-                context={context}
+                />
 
-            />
+            </div>
+            <div className='text-center flex flex-col items-center  justify-start '>
+                <TypingAnimation />
 
+            </div>
         </div>
 
     );
@@ -39,6 +44,7 @@ export default function About() {
                         imgSrc="/me3.jpg"
                         context="profile picture"
                     />
+
                 </Animation>
 
                 <div className="w-full md:w-3/4">
