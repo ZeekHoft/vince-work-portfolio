@@ -3,7 +3,7 @@ import { FaMobileAlt, FaLaptopCode } from "react-icons/fa";
 import { FaPencilRuler, FaUsers } from "react-icons/fa";
 import { FaDatabase, FaServer, FaGamepad } from "react-icons/fa";
 import myLocalFont from './globalfont';
-import { NameAnimation, TextAnimation, BlurAnimation } from "./animation";
+import { NameAnimation, TextAnimation, BlurAnimation, ComponentBlurAnimation } from "./animation";
 
 import * as React from "react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -40,33 +40,40 @@ const Services = () => {
 
             <div className="mt-20">
                 <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl p-10 ">
-                    <BlurAnimation text="Services" />
+                    <BlurAnimation>Services</BlurAnimation>
 
                 </h1>
-                <Carousel
-                    opts={{
-                        align: "start",
-                    }}
-                    className="w-full max-w-7xl mx-auto  "
-                >
-                    <CarouselContent>
-                        {ServicesList.map((item, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                                <div className="p-1">
-                                    <Card className="min-h-[250px] flex flex-col justify-between bg-white md:h-80 md:w-100">
-                                        <CardContent className="flex flex-col items-center justify-center p-6 text-center">
-                                            <item.Icon className="text-5xl text-orange-400 mb-4" />
-                                            <h3 className="text-xl font-bold mb-2">{item.value}</h3>
-                                            <p className="text-sm text-gray-500">{item.description}</p>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    {/* <CarouselPrevious />
+                <ComponentBlurAnimation>
+
+                    <Carousel
+                        opts={{
+                            align: "start",
+                        }}
+                        className="w-full max-w-7xl mx-auto  "
+                    >
+                        <CarouselContent>
+
+                            {ServicesList.map((item, index) => (
+                                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                                    <div className="p-1">
+                                        <Card className="min-h-[250px] flex flex-col justify-between bg-white md:h-80 md:w-100">
+                                            <CardContent className="flex flex-col items-center justify-center p-6 text-center">
+                                                <item.Icon className="text-5xl text-orange-400 mb-4" />
+                                                <h3 className="text-xl font-bold mb-2">{item.value}</h3>
+                                                <p className="text-sm text-gray-500">{item.description}</p>
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+
+                        </CarouselContent>
+                        {/* <CarouselPrevious />
                     <CarouselNext /> */}
-                </Carousel>
+                    </Carousel>
+                </ComponentBlurAnimation>
+
+
             </div>
         </div>
     );

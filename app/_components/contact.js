@@ -1,5 +1,6 @@
 import myLocalFont from './globalfont';
-import { BlurAnimation } from './animation';
+import { BlurAnimation, ComponentBlurAnimation } from './animation';
+
 
 
 
@@ -7,32 +8,36 @@ import { BlurAnimation } from './animation';
 const SocialLink = ({ href, iconSrc, altText, text }) => {
     return (
         // 1. Base Container: Sets up layout and hover effect
-        <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
+        <div>
+            <ComponentBlurAnimation>
+                <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
 
-            className="flex items-center space-x-2 bg-white rounded-lg p-2 
+                    className="flex items-center space-x-2 bg-white rounded-lg p-2 
                  w-92 md:w-16 md:hover:w-100 md:transition-all md:duration-700 md:ease-in-out 
                  md:shadow-lg md:hover:shadow-xl group"
-        >
-            <img
-                src={iconSrc}
-                width="37"
-                height="25"
-                alt={altText}
-                className="flex-shrink-0"
-            />
+                >
+                    <img
+                        src={iconSrc}
+                        width="37"
+                        height="25"
+                        alt={altText}
+                        className="flex-shrink-0"
+                    />
 
-            <span
+                    <span
 
-                className="text-black text-lg font-semibold whitespace-nowrap font-bold
+                        className="text-black text-lg font-semibold whitespace-nowrap font-bold
                    md:opacity-0  group-hover:opacity-100 transition-opacity md:font-bold
                    delay-150 md: text-xl"
-            >
-                {text}
-            </span>
-        </a>
+                    >
+                        {text}
+                    </span>
+                </a>
+            </ComponentBlurAnimation>
+        </div>
     );
 };
 
@@ -41,7 +46,7 @@ export default function Page() {
         <div className={` ${myLocalFont.className}`} >
             <div className="tracking-wide">
                 <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl ">
-                    <BlurAnimation text="Contact" />
+                    <BlurAnimation>Contact</BlurAnimation>
 
                 </h1>
 
