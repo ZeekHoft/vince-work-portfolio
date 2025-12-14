@@ -5,6 +5,8 @@ import * as motion from "motion/react-client"
 import React from 'react'
 import TypingText from "@/components/ui/shadcn-io/typing-text";
 import BlurText from "@/components/ui/shadcn-io/blur-text";
+import TextPressure from "@/components/ui/shadcn-io/text-pressure";
+import { useMediaQuery } from "use-media-query-react";
 
 function Animation({ children }) {
     const [rotate, setRotate] = React.useState(false);
@@ -115,6 +117,34 @@ export function ComponentBlurAnimation({ children }) {
         </motion.div>
     );
 }
+
+
+export function PreassureText({ children }) {
+
+
+    return (
+        <div className="flex items-center justify-center min-h-screen w-full p-4 sm:p-8 
+             text-5xl 
+             md:text-9xl">
+            <div className="relative w-full flex items-center justify-center px-4 sm:px-12">
+                <TextPressure
+                    text={"Francis\u00A0Vince\u00A0Jaca"} //Unicode non-breaking space character \u00A0. This forces the 
+                    // engine to treat the space as a character that takes up width.
+                    flex={true}
+                    alpha={false}
+                    stroke={false}
+                    width={false}
+                    weight={true}
+                    italic={false}
+                    textColor="currentColor"
+                    // minFontSize={maxFontSize}
+                    className="text-foreground"
+                />
+            </div>
+        </div>
+    );
+}
+
 
 
 export default Animation

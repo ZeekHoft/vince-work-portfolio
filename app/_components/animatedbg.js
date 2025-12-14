@@ -1,6 +1,8 @@
 import { Boxes } from "@/components/ui/shadcn-io/background-boxes/index"
 import { BackgroundBeamsWithCollision } from "@/components/ui/shadcn-io/background-beams-with-collision";
 import { TextAnimation } from "./animation";
+import { PreassureText } from "./animation";
+
 function AnimagedBoxes() {
     return (
         <div className="h-full">
@@ -17,13 +19,9 @@ export function AnimatedBeams() {
     return (
         <div >
             <BackgroundBeamsWithCollision>
-                <h1 className="flex md:text-9xl  text-6xl text-center font-bold uppercase outlined-text ">
+                <h1 className="text-center font-bold uppercase outlined-text ">
                     <TextAnimation>
-
-                        Francis Vince Jaca
-
-                        <span ><h1 className="h1fontChangeName pt-10">Francis Vince Jaca</h1></span>
-                        <span ><h1 className="pt-10">Francis Vince Jaca</h1></span>
+                        <span ><h1 className="h1fontChangeName pt-10"><PreassureText /></h1></span>
 
                     </TextAnimation>
                 </h1>
@@ -32,5 +30,12 @@ export function AnimatedBeams() {
         </div>
     );
 }
+
+
+
+
+
+
+
 
 export default AnimagedBoxes
