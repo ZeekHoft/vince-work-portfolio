@@ -4,6 +4,7 @@ import { FaPencilRuler, FaUsers } from "react-icons/fa";
 import { FaDatabase, FaServer, FaGamepad } from "react-icons/fa";
 import myLocalFont from './globalfont';
 import { NameAnimation, TextAnimation, BlurAnimation, ComponentBlurAnimation } from "./animation";
+import Displayprojct from "./displayprojct";
 
 import * as React from "react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -36,7 +37,7 @@ const ServicesList = [
 const Services = () => {
     return (
 
-        <div className={`p-4  ${myLocalFont.className}`}>
+        <div className={`p-4  ${myLocalFont.className} `}>
 
             <div className="mt-20">
                 <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl pb-10 ">
@@ -78,16 +79,59 @@ const Services = () => {
             <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl pt-10 ">
                 <BlurAnimation>Projects</BlurAnimation>
 
-
-
-
-
-
-
-
-
-
             </h1>
+            <ComponentBlurAnimation>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-5 md:m-10 lg:m-20">
+                    <Displayprojct
+                        imgSrc={"./jpgCompass.jpg"}
+                        title={"CS Compass"}
+                        link={"https://github.com/ZeekHoft/Student-Compas"}
+                        context={"A student navigation system for incomming first years, having access to council members, organizations, events and more."}
+                        badges={[
+                            { name: 'Firebase', icon: '🔥', bgColor: '#1e1610', borderColor: '#452b1e', textColor: '#ff9100' },
+                            { name: 'Flutter', icon: '💙', bgColor: '#0d1729', borderColor: '#1e3a5f', textColor: '#027dfd' },
+                            { name: 'Dart', icon: '🎯', bgColor: '#0a1a2f', borderColor: '#113355', textColor: '#00ccff' },
+                            { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' }
+
+                        ]}
+                    />
+                    <Displayprojct
+                        imgSrc={"./dappli_logo.jpg"}
+                        title={"DAPPLI"}
+                        link={"https://github.com/ZeekHoft/Fillipino-Food-App"}
+                        context={"Scan. Cook. Enjoy. Your smart kitchen buddy DAPPLI uses AR to scan ingredients and serve up personalized, allergy-safe Filipino recipes in seconds! "}
+                        badges={[
+                            { name: 'Firebase', icon: '🔥', bgColor: '#1e1610', borderColor: '#452b1e', textColor: '#ff9100' },
+                            { name: 'Flutter', icon: '💙', bgColor: '#0d1729', borderColor: '#1e3a5f', textColor: '#027dfd' },
+                            { name: 'Dart', icon: '🎯', bgColor: '#0a1a2f', borderColor: '#113355', textColor: '#00ccff' },
+                            { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' },
+                            { name: 'OpenAI', icon: '✨', bgColor: '#000000', borderColor: '#333333', textColor: '#10a37f' },
+
+
+                        ]}
+                    />
+                    <Displayprojct
+                        imgSrc={"./deception.jpg"}
+                        title={"Deception Detector"}
+                        link={"https://github.com/ZeekHoft/love-in-paradise"}
+                        context={"Developed a browser-based fact-checking system for Philippine news claims using NLP and optional AI. "}
+                        badges={[
+                            { name: 'Firebase', icon: '🔥', bgColor: '#1e1610', borderColor: '#452b1e', textColor: '#ff9100' },
+                            { name: 'Flutter', icon: '💙', bgColor: '#0d1729', borderColor: '#1e3a5f', textColor: '#027dfd' },
+                            { name: 'Dart', icon: '🎯', bgColor: '#0a1a2f', borderColor: '#113355', textColor: '#00ccff' },
+                            { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' },
+                            { name: 'OpenAI', icon: '✨', bgColor: '#000000', borderColor: '#333333', textColor: '#10a37f' },
+
+
+                        ]}
+                    />
+
+
+
+                </div>
+            </ComponentBlurAnimation>
+
         </div>
     );
 };

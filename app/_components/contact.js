@@ -1,11 +1,6 @@
 import myLocalFont from './globalfont';
 // import { BlurAnimation, ComponentBlurAnimation } from './animation';
 import { BlurAnimation, ComponentBlurAnimation } from './animation';
-
-
-
-
-
 const SocialLink = ({ href, iconSrc, altText, text }) => {
     return (
         // 1. Base Container: Sets up layout and hover effect
