@@ -274,3 +274,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Offset for fixed header so headings aren't covered */
+/* section {
+  scroll-margin-top: 80px;
+} */

@@ -23,10 +23,11 @@ export default function Header() {
                     <div className="textGray font-bold" />
 
                     <div className="flex space-x-4">
+                        <Link href="#" className={inactiveClasses}>Home</Link>
+                        <Link href="#service" className={inactiveClasses}>Service</Link>
 
-                        <Link href="/" className={getLinkClasses("/")}>Home</Link>
-                        <Link href="/about" className={getLinkClasses("/about")}>About</Link>
-                        {/* <Link href="/contact" className={getLinkClasses("/contact")}>Contact</Link> */}
+                        <Link href="#about" className={inactiveClasses}>About</Link>
+                        <Link href="#contact" className={inactiveClasses}>Contact</Link>
                     </div>
                     <div className="textGrayfont-bold" />
 

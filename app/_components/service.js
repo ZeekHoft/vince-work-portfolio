@@ -75,6 +75,19 @@ const Services = () => {
 
 
             </div>
+            <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl pt-10 ">
+                <BlurAnimation>Projects</BlurAnimation>
+
+
+
+
+
+
+
+
+
+
+            </h1>
         </div>
     );
 };
@@ -84,42 +97,6 @@ export default Services;
 
 
 
-// function Service() {
-//     return (
-//         <div>
-//             <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl ">
-//                 <BlurAnimation text="Services" />
-
-//             </h1>
-//             <div className="flex justify-center">
-//                 <Carousel
-//                     opts={{
-//                         align: "start",
-//                     }}
-//                     className="w-1/1 max-w-sm md:w-1/1 md:max-w-5xl md:max-h-96"
-//                 >
-//                     <Carousel>
-//                         <CarouselContent>
-//                             <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-//                                 <Card>
-//                                     <CardContent className="flex aspect-square items-center justify-center p-6">
-//                                     </CardContent>
-//                                 </Card>
-
-
-//                             </CarouselItem>
-//                             <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
-//                             <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
-//                         </CarouselContent>
-//                     </Carousel>
-//                     <CarouselPrevious />
-//                     <CarouselNext />
-//                 </Carousel></div>
-//         </div>
-//     )
-// }
-
-// export default Service;
 
 
 

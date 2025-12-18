@@ -7,6 +7,9 @@ import TypingText from "@/components/ui/shadcn-io/typing-text";
 import BlurText from "@/components/ui/shadcn-io/blur-text";
 import TextPressure from "@/components/ui/shadcn-io/text-pressure";
 import { useMediaQuery } from "use-media-query-react";
+import { SplittingText } from "@/components/ui/shadcn-io/splitting-text";
+
+
 
 function Animation({ children }) {
     const [rotate, setRotate] = React.useState(false);
@@ -82,7 +85,7 @@ export function TypingAnimation({ children }) {
 }
 
 
-export function BlurAnimation({ text, children }) {
+export function BlurAnimation({ children }) {
     const containerVariants = {
         hidden: { opacity: 0, filter: 'blur(30px)', y: 20 },
         visible: { opacity: 1, filter: 'blur(0px)', y: 0, transition: { duration: 0.8, delay: 0.2 } },
@@ -144,6 +147,26 @@ export function PreassureText({ children }) {
         </div>
     );
 }
+
+
+export function TextSplit({ text, type, delay }) {
+    return (
+        <SplittingText
+            text={text}
+            type={type}
+            inView={true}
+            delay={delay}
+            motionVariants={{
+                initial: { opacity: 0, x: 100 },
+                animate: { opacity: 1, x: 0 },
+                transition: { duration: 0.5 },
+                stagger: 0.1
+            }}
+        />
+
+    )
+}
+
 
 
 

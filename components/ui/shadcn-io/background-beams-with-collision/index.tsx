@@ -87,74 +87,74 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-4",
     },
     // New Beam 10
-    {
-      initialX: 1500,
-      translateX: 1500,
-      duration: 4,
-      repeatDelay: 5,
-      delay: 3,
-      className: "h-10",
-    },
-    // New Beam 11
-    {
-      initialX: 50,
-      translateX: 50,
-      duration: 4,
-      repeatDelay: 6,
-      delay: 5,
-    },
+    // {
+    //   initialX: 1500,
+    //   translateX: 1500,
+    //   duration: 4,
+    //   repeatDelay: 5,
+    //   delay: 3,
+    //   className: "h-10",
+    // },
+    // // New Beam 11
+    // {
+    //   initialX: 50,
+    //   translateX: 50,
+    //   duration: 4,
+    //   repeatDelay: 6,
+    //   delay: 5,
+    // },
     // New Beam 12
-    {
-      initialX: 1400,
-      translateX: 1400,
-      duration: 3.5,
-      repeatDelay: 3,
-      delay: 1,
-      className: "h-18",
-    },
-    // New Beam 13
-    {
-      initialX: 950,
-      translateX: 950,
-      duration: 4.5,
-      repeatDelay: 10,
-      delay: 6,
-    },
-    // New Beam 14
-    {
-      initialX: 350,
-      translateX: 350,
-      duration: 2.5,
-      repeatDelay: 5,
-      delay: 2,
-      className: "h-16",
-    },
-    // New Beam 15
-    {
-      initialX: 1100,
-      translateX: 1100,
-      duration: 5.5,
-      repeatDelay: 12,
-      delay: 8,
-    },
-    // New Beam 16
-    {
-      initialX: 1300,
-      translateX: 1300,
-      duration: 3,
-      repeatDelay: 7,
-      delay: 0,
-      className: "h-8",
-    },
-    // New Beam 17
-    {
-      initialX: 500,
-      translateX: 500,
-      duration: 4,
-      repeatDelay: 4,
-      delay: 1.5,
-      className: "h-14",
-    },
+    // {
+    //   initialX: 1400,
+    //   translateX: 1400,
+    //   duration: 3.5,
+    //   repeatDelay: 3,
+    //   delay: 1,
+    //   className: "h-18",
+    // },
+    // // New Beam 13
+    // {
+    //   initialX: 950,
+    //   translateX: 950,
+    //   duration: 4.5,
+    //   repeatDelay: 10,
+    //   delay: 6,
+    // },
+    // // New Beam 14
+    // {
+    //   initialX: 350,
+    //   translateX: 350,
+    //   duration: 2.5,
+    //   repeatDelay: 5,
+    //   delay: 2,
+    //   className: "h-16",
+    // },
+    // // New Beam 15
+    // {
+    //   initialX: 1100,
+    //   translateX: 1100,
+    //   duration: 5.5,
+    //   repeatDelay: 12,
+    //   delay: 8,
+    // },
+    // // New Beam 16
+    // {
+    //   initialX: 1300,
+    //   translateX: 1300,
+    //   duration: 3,
+    //   repeatDelay: 7,
+    //   delay: 0,
+    //   className: "h-8",
+    // },
+    // // New Beam 17
+    // {
+    //   initialX: 500,
+    //   translateX: 500,
+    //   duration: 4,
+    //   repeatDelay: 4,
+    //   delay: 1.5,
+    //   className: "h-14",
+    // },
   ];
 
   return (
@@ -293,7 +293,7 @@ const CollisionMechanism = React.forwardRef<
         }}
         className={cn(
           // "absolute left-0 top-20 m-auto h-14 w-px rounded-full bg-gradient-to-t from-indigo-500 via-purple-500 to-transparent", // original
-          "absolute left-0 top-20 m-auto h-14 w-1 rounded-full bg-gradient-to-t from-yellow-500 via-gray-900 to-transparent",
+          "absolute left-0 top-20 m-auto h-14 w-2 rounded-full bg-gradient-to-t from-yellow-500 via-gray-900 to-transparent",
 
           beamOptions.className
         )}
