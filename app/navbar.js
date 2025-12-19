@@ -5,7 +5,7 @@ import myLocalFont from './_components/globalfont';
 import { NavDropDown, } from "./_components/animation";
 export default function Header() {
     const pathname = usePathname();
-    const inactiveClasses = "textGray hover:text-gray-300 hover:border-b-4 hover:border-gray-300 navBarText";
+    const inactiveClasses = "textGray hover:text-gray-300 hover:border-b-2 hover:border-gray-300 navBarText";
     const activeClasses = "navBarColorActive";
 
     const getLinkClasses = (href) => {
@@ -22,12 +22,13 @@ export default function Header() {
                 <div className="flex justify-between items-center w-full max-w-6xl mx-auto  p-3 shadow-lg rounded-lg navBarColor">
                     <div className="textGray font-bold" />
 
-                    <div className="flex space-x-4">
+                    <div className="flex gap-9 ">
+
                         <Link href="#" className={inactiveClasses}>Home</Link>
                         <Link href="#service" className={inactiveClasses}>Service</Link>
 
                         <Link href="#about" className={inactiveClasses}>About</Link>
-                        <Link href="#contact" className={inactiveClasses}>Contact</Link>
+                        {/* <Link href="#contact" className={inactiveClasses}>Contact</Link> */}
                     </div>
                     <div className="textGrayfont-bold" />
 

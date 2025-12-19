@@ -92,13 +92,16 @@ export function BlurAnimation({ children }) {
     };
 
     return (
-        <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-        >
-            {children}
-        </motion.div>
+        <div className="font-bold">
+            <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+            >
+
+                {children}
+            </motion.div>
+        </div>
     );
 }
 export function ComponentBlurAnimation({ children }) {

@@ -34,7 +34,7 @@ export function AnimatedBeams() {
                         <span>
                             <h3 className=" text-center uppercase text-2xl  md:text-left md:text-5xl">
                                 <TextSplit
-                                    text="Software/ Web/Game/ Mobile developer"
+                                    text="Software/ Web/  Game/ Mobile developer"
                                     type={"words"}
                                     delay={2200} />
 
