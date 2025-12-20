@@ -108,7 +108,7 @@ const Services = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-5 md:m-10 lg:m-20">
                     <Displayprojct
-                        imgSrc={"./jpgCompass.jpg"}
+                        imgSrc={"./compass2.jpg"}
                         title={"CS Compass"}
                         link={"https://github.com/ZeekHoft/Student-Compas"}
                         context={"A student navigation system for incomming first years, having access to council members, organizations, events and more."}
