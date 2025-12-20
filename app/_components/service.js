@@ -26,7 +26,9 @@ const IconWrapper = ({ Icon }) => (
         <div className="absolute -inset-2 bg-yellow-400 rounded-2xl opacity-0 blur-xl transition duration-500 group-hover:opacity-30" />
 
         {/* Main Icon Container */}
-        <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm shadow-xl transition-all duration-300 group-hover:-translate-y-1 group-hover:border-yellow-400/50 group-hover:bg-white/10">
+        <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl
+        border border-white/20 bg-white/5 backdrop-blur-sm shadow-xl transition-all duration-300
+        group-hover:-translate-y-1 group-hover:border-yellow-400/50 group-hover:bg-white/10">
 
             {/* Reflective Top Highlight */}
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
@@ -136,9 +138,11 @@ const Services = () => {
                     <Displayprojct
                         imgSrc={"./deception.jpg"}
                         title={"Deception Detector"}
-                        link={"https://github.com/ZeekHoft/love-in-paradise"}
+                        link={"https://the-deception-detector.vercel.app/home"}
                         context={"Developed a browser-based fact-checking system for Philippine news claims using NLP and optional AI. "}
                         badges={[
+                            { name: 'Firebase', icon: '🔥', bgColor: '#1e1610', borderColor: '#452b1e', textColor: '#ff9100' },
+
                             { name: 'OpenAI', icon: '✨', bgColor: '#000000', borderColor: '#333333', textColor: '#10a37f' },
                             { name: 'JavaScript', icon: '💛', bgColor: '#1e1c11', borderColor: '#3e3515', textColor: '#f7df1e' },
 
@@ -156,6 +160,12 @@ const Services = () => {
                                 bgColor: '#0a192f',
                                 borderColor: '#112240',
                                 textColor: '#2965f1'
+                            }, {
+                                name: 'Docker',
+                                icon: '🐳',
+                                bgColor: '#0db7ed',
+                                borderColor: '#00578a',
+                                textColor: '#ffffff'
                             }
 
                         ]}

@@ -13,7 +13,8 @@ const Imagescarousel = ({ imagesSrc = [] }) => {
                         <CarouselItem
                             key={index}
                             className="md:basis-1/2 lg:basis-1/6  ">
-                            <div className="relative md:flex md:items-center   shadow-2xl backdrop-blur-md  transition-all duration-500 hover:border-yellow-400/40 hover:shadow-[0_0_40px_rgba(250,204,21,0.1)] overflow-hidden">
+                            <div className="relative md:flex md:items-center   shadow-2xl backdrop-blur-md 
+                            transition-all duration-500 hover:border-yellow-400/40 hover:shadow-[0_0_40px_rgba(250,204,21,0.1)] overflow-hidden">
                                 <img
                                     height={img.height}
                                     width={img.width}
