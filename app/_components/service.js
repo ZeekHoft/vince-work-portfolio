@@ -93,8 +93,8 @@ const Services = () => {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        {/* <CarouselPrevious />
-                    <CarouselNext /> */}
+                        <CarouselPrevious />
+                        <CarouselNext />
                     </Carousel>
                 </ComponentBlurAnimation>
 
@@ -106,7 +106,7 @@ const Services = () => {
             </h1>
             <ComponentBlurAnimation>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-5 md:m-10 lg:m-20">
+                <div className="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-8 m-5 md:m-10 lg:m-20">
                     <Displayprojct
                         imgSrc={"./compass2.jpg"}
                         title={"CS Compass"}
@@ -131,6 +131,7 @@ const Services = () => {
                             { name: 'Dart', icon: '🎯', bgColor: '#0a1a2f', borderColor: '#113355', textColor: '#00ccff' },
                             { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' },
                             { name: 'OpenAI', icon: '✨', bgColor: '#000000', borderColor: '#333333', textColor: '#10a37f' },
+                            { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' }
 
 
                         ]}
@@ -141,37 +142,52 @@ const Services = () => {
                         link={"https://the-deception-detector.vercel.app/home"}
                         context={"Developed a browser-based fact-checking system for Philippine news claims using NLP and optional AI. "}
                         badges={[
+                            {
+                                name: 'Next.js', icon: '▲', bgColor: '#000000', borderColor: '#333333', textColor: '#ffffff'
+                            },
                             { name: 'Firebase', icon: '🔥', bgColor: '#1e1610', borderColor: '#452b1e', textColor: '#ff9100' },
 
                             { name: 'OpenAI', icon: '✨', bgColor: '#000000', borderColor: '#333333', textColor: '#10a37f' },
                             { name: 'JavaScript', icon: '💛', bgColor: '#1e1c11', borderColor: '#3e3515', textColor: '#f7df1e' },
-
+                            { name: 'Tailwind', icon: '🌊', bgColor: '#0f172a', borderColor: '#1e293b', textColor: '#38bdf8' },
+                            { name: 'CSS', icon: '🎨', bgColor: '#0a192f', borderColor: '#112240', textColor: '#2965f1' },
                             {
-                                name: 'Tailwind',
-                                icon: '🌊',
-                                bgColor: '#0f172a',
-                                borderColor: '#1e293b',
-                                textColor: '#38bdf8'
+                                name: 'Docker', icon: '🐳', bgColor: '#0db7ed', borderColor: '#00578a', textColor: '#ffffff'
                             },
-
-                            {
-                                name: 'CSS',
-                                icon: '🎨',
-                                bgColor: '#0a192f',
-                                borderColor: '#112240',
-                                textColor: '#2965f1'
-                            }, {
-                                name: 'Docker',
-                                icon: '🐳',
-                                bgColor: '#0db7ed',
-                                borderColor: '#00578a',
-                                textColor: '#ffffff'
-                            }
+                            { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' }
 
                         ]}
                     />
+                    <Displayprojct
+                        imgSrc={"./blogs.jpg"}
+                        title={"Likely Blogs"}
+                        link={"https://blog-crud-two.vercel.app"}
+                        context={"A simple sight where you can post things that have or likely to happen in your life "}
+                        badges={[
+
+                            {
+                                name: 'Next.js', icon: '▲', bgColor: '#000000', borderColor: '#333333', textColor: '#ffffff'
+                            },
+                            {
+                                name: 'Tailwind', icon: '🌊', bgColor: '#0f172a', borderColor: '#1e293b', textColor: '#38bdf8'
+                            },
+                            {
+                                name: 'Shadcn', icon: '🔘', bgColor: '#030712', borderColor: '#1f2937', textColor: '#ffffff'
+                            },
+                            {
+                                name: 'Drizzle', icon: '💧', bgColor: '#1a1d12', borderColor: '#3a3f24', textColor: '#c5f200'
+                            },
+                            {
+                                name: 'Neon', icon: '⚡', bgColor: '#000000', borderColor: '#1a1a1a', textColor: '#00e599'
+                            },
+                            {
+                                name: 'Drizzle', icon: '💧', bgColor: '#1a1d12', borderColor: '#3a3f24', textColor: '#c5f200'
+                            },
+                            { name: 'GitHub', icon: '🐙', bgColor: '#0d1117', borderColor: '#30363d', textColor: '#ffffff' }
 
 
+                        ]}
+                    />
 
                 </div>
             </ComponentBlurAnimation>
