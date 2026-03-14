@@ -35,9 +35,11 @@ export default function About() {
                 <div className="md:w-3/4">
                     <div className="text-center pt-5 md:text-left md:pt-10">
                         <h1 className="text-2xl md:text-3xl font-bold textGray">
-                            <BlurAnimation text="Hi I'm" />
+                            <BlurAnimation> Hi I'm</BlurAnimation>
+
                             <span className="text-2xl md:text-3xl h1fontChangeName font-bold">
-                                <BlurAnimation text=" Francis Vince Jaca," />
+                                <BlurAnimation> Francis Vince Jaca,</BlurAnimation>
+
                             </span>
                         </h1>
                         <br />
