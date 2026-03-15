@@ -43,7 +43,8 @@ export default function About() {
                             </span>
                         </h1>
                         <br />
-                        <TextAnimation>
+                        <BlurAnimation>
+                            {/* <TextAnimation> */}
                             <p className="pt-5 pb-5 text-lg md:text-xl space-y-4 textGray">
                                 I am a game, mobile, software, and web developer with a core mission: building technology that targets the
                                 <span className='h1fontChangeName font-bold'> "THE 17 GOALS | Sustainable Development"</span>.
@@ -89,7 +90,8 @@ export default function About() {
 
                                 </div>
                             </div>
-                        </TextAnimation>
+                            {/* </TextAnimation> */}
+                        </BlurAnimation>
                     </div>
                 </div>
             </div>
