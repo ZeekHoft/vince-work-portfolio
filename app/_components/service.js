@@ -220,7 +220,7 @@ const Services = () => {
                     <Displayprojct
                         imgSrc={"./callblog.png"}
                         title={"Callblog"}
-                        link={"https://lead-gen-website-gamma.vercel.app"}
+                        link={"https://callblog.vercel.app"}
                         context={"An automated AI content genrator for blogs that caters the idea of businesses."}
                         badges={[
 
