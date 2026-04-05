@@ -217,6 +217,7 @@ const Services = () => {
                         ]}
                     />
 
+
                     <Displayprojct
                         imgSrc={"./callblog.png"}
                         title={"Callblog"}
@@ -261,6 +262,29 @@ const Services = () => {
                             }
                         ]}
                     />
+
+
+                    <Displayprojct
+                        imgSrc={"./fastapi.png"}
+                        title={"FastAPI Blog"}
+                        link={"https://github.com/ZeekHoft/fastapi-blog"}
+                        context={"A blog posting project created with the sole purpose of learning and understanding how FastAPI works. This project has the generic features of a normal blogposting site, authentication, CRUD, database, file and API route management."}
+                        badges={[
+                            { name: 'FastAPI', icon: '⚡', bgColor: '#05998b1a', borderColor: '#05998b', textColor: '#05998b' },
+
+                            { name: 'SQLAlchemy', icon: '🛢️', bgColor: '#1e1e1e', borderColor: '#d71f1f', textColor: '#ffffff' },
+                            { name: 'aiosqlite', icon: '📁', bgColor: '#003b571a', borderColor: '#003b57', textColor: '#00a3e0' },
+
+                            { name: 'Pydantic', icon: '✅', bgColor: '#e920631a', borderColor: '#e92063', textColor: '#e92063' },
+                            { name: 'PyJWT', icon: '🔑', bgColor: '#1c1c1c', borderColor: '#fb015b', textColor: '#ffffff' },
+
+                            { name: 'Jinja2', icon: '🔥', bgColor: '#1a1a1a', borderColor: '#b41717', textColor: '#ffffff' },
+                            { name: 'Rich', icon: '🌈', bgColor: '#0c0c0c', borderColor: '#af00ff', textColor: '#af00ff' },
+
+                            { name: 'Sentry', icon: '🦉', bgColor: '#362d591a', borderColor: '#362d59', textColor: '#ffffff' },
+                        ]}
+                    />
+
                 </div>
             </ComponentBlurAnimation>
 
