@@ -226,39 +226,19 @@ const Services = () => {
                         badges={[
 
                             {
-                                name: 'TypeScript',
-                                icon: '🟦',
-                                bgColor: '#3178c6',
-                                borderColor: '#235a97',
-                                textColor: '#ffffff'
+                                name: 'TypeScript', icon: '🟦', bgColor: '#3178c6', borderColor: '#235a97', textColor: '#ffffff'
                             },
                             {
-                                name: 'React',
-                                icon: '⚛️',
-                                bgColor: '#23272f',
-                                borderColor: '#149eca',
-                                textColor: '#149eca'
+                                name: 'React', icon: '⚛️', bgColor: '#23272f', borderColor: '#149eca', textColor: '#149eca'
                             },
                             {
-                                name: 'n8n',
-                                icon: '🐙',
-                                bgColor: '#ff6d5a',
-                                borderColor: '#e05646',
-                                textColor: '#ffffff'
+                                name: 'n8n', icon: '🐙', bgColor: '#ff6d5a', borderColor: '#e05646', textColor: '#ffffff'
                             },
                             {
-                                name: 'AI Gemini',
-                                icon: '🧠',
-                                bgColor: '#4f46e5',
-                                borderColor: '#4338ca',
-                                textColor: '#ffffff'
+                                name: 'AI Gemini', icon: '🧠', bgColor: '#4f46e5', borderColor: '#4338ca', textColor: '#ffffff'
                             },
                             {
-                                name: 'Supabase',
-                                icon: '⚡',
-                                bgColor: '#1c1c1c',
-                                borderColor: '#2e2e2e',
-                                textColor: '#3ecf8e'
+                                name: 'Supabase', icon: '⚡', bgColor: '#1c1c1c', borderColor: '#2e2e2e', textColor: '#3ecf8e'
                             }
                         ]}
                     />
