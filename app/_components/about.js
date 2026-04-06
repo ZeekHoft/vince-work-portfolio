@@ -62,13 +62,22 @@ export default function About() {
 
                             </p>
                             <div>
-                                <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Langauges | Tools | Platforms </h1>
+                                <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Skills & Tools</h1>
                                 <div className='grid grid-cols-3 '>
                                     <DisplaySkills
                                         Icon={MdAppSettingsAlt}
                                         title={"Languages"}
                                         programlang={[
-                                            { name: 'TypeScript', bgColor: '#3178c6', borderColor: '#235a97', textColor: '#ffffff' },
+                                            { name: 'Python', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'JavaScript', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'TypeScript', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'Java', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'C#', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'Dart', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'HTML & CSS', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+
+
+
                                         ]}
                                     />
 
