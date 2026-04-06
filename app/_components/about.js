@@ -62,33 +62,12 @@ export default function About() {
                             </p>
                             <div>
                                 <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Langauges | Tools | Platforms </h1>
-                                <div className='flex flex-row gap-x-2 gap-y-2 flex-wrap justify-center md:justify-start '>
+                                <div className='grid grid-cols-3 '>
 
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height={35} width={35} alt="python logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height={35} width={35} alt="csharp logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height={35} width={35} alt="javascript logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height={35} width={35} alt="react logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height={35} width={35} alt="tailwindcss logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height={35} width={35} alt="html5 logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height={35} width={35} alt="css logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" height={35} width={35} alt="dart logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height={35} width={35} alt="flutter logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height={35} width={35} alt="nextjs logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height={35} width={35} alt="flask logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" height={35} width={35} alt="vercel logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height={35} width={35} alt="amazonwebservices logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height={35} width={35} alt="firebase logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height={35} width={35} alt="git logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height={35} width={35} alt="github logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height={35} width={35} alt="visualstudio logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height={35} width={35} alt="vscode logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" height={35} width={35} alt="androidstudio logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" height={35} width={35} alt="pycharm logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" height={35} width={35} alt="godot logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height={35} width={35} alt="docker logo" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height={35} width={35} alt="typescript logo" />
 
                                 </div>
+
+
                             </div>
                             {/* </TextAnimation> */}
                         </BlurAnimation>
