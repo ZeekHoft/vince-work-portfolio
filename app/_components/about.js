@@ -1,11 +1,8 @@
 
-import Contact from './contact';
 import myLocalFont from './globalfont';
 import Animation from './animation';
 import { TextAnimation, NameAnimation, BlurAnimation } from './animation';
-import { TypingAnimation } from './animation';
 import DisplaySkills from './displayskills';
-import { MdAppSettingsAlt } from "react-icons/md";
 
 
 

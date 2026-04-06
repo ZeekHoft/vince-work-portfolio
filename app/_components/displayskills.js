@@ -5,9 +5,16 @@ import React from 'react'
 function DisplaySkills({ title, Icon: Symbol, programlang = [] }) {
     return (
         <div className='bg-gradient-to-r from-neutral-700 to-neutral-700 rounded-sm w-3/3'  >
-            <h1 className='h1fontChangeName p-3 flex text-xl'>
-                {Symbol && <Symbol size={24} />}
-                {title}
+            <h1 className=' p-3 flex text-xl'>
+                <div className='pr-2 h1fontChangeName'>
+                    {Symbol && <Symbol size={26} />}
+
+                </div>
+                <div className=' text-white'>
+
+                    {title}
+
+                </div>
 
 
 
