@@ -4,7 +4,8 @@ import myLocalFont from './globalfont';
 import Animation from './animation';
 import { TextAnimation, NameAnimation, BlurAnimation } from './animation';
 import { TypingAnimation } from './animation';
-
+import DisplaySkills from './displayskills';
+import { MdAppSettingsAlt } from "react-icons/md";
 
 const ProfilePic = ({ imgSrc, context }) => {
     return (
@@ -63,7 +64,13 @@ export default function About() {
                             <div>
                                 <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Langauges | Tools | Platforms </h1>
                                 <div className='grid grid-cols-3 '>
-
+                                    <DisplaySkills
+                                        Icon={MdAppSettingsAlt}
+                                        title={"Languages"}
+                                        programlang={[
+                                            { name: 'TypeScript', bgColor: '#3178c6', borderColor: '#235a97', textColor: '#ffffff' },
+                                        ]}
+                                    />
 
                                 </div>
 
