@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Displayprojct = ({ imgSrc, title, link, context, badges = [] }) => {
+function Displayprojct({ imgSrc, title, link, context, badges = [] }) {
     return (
         <div className="group max-w-xl bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5 p-1 shadow-2xl transition-all
         duration-500 hover:bg-slate-900/80 hover:border-yellow-400/30 hover:shadow-[0_0_30px_rgba(250,204,21,0.1)]">

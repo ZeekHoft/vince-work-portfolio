@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-function DisplaySkills() {
+function DisplaySkills({ imgSrc, title, link, context, badges = [] })  {
     return (
         <div></div>
     )
