@@ -1,6 +1,8 @@
 
 import { FaMobileAlt, FaLaptopCode } from "react-icons/fa";
 import { FaPencilRuler, FaUsers } from "react-icons/fa";
+import { MdAppSettingsAlt } from "react-icons/md";
+
 import { FaDatabase, FaServer, FaGamepad } from "react-icons/fa";
 import myLocalFont from './globalfont';
 import { NameAnimation, TextAnimation, BlurAnimation, ComponentBlurAnimation } from "./animation";
@@ -46,7 +48,7 @@ const IconWrapper = ({ Icon }) => (
 const ServicesList = [
     { key: 'service1', value: 'Mobile App Development', Icon: FaMobileAlt, description: 'Building high-performance native and cross-platform mobile applications.' },
     { key: 'service2', value: 'Web Development', Icon: FaLaptopCode, description: 'Creating  web applications using modern frameworks.' },
-    { key: 'service3', value: 'UX/UI Design & Prototyping', Icon: FaPencilRuler, description: 'Designing intuitive user interfaces and user-centered experiences.' },
+    { key: 'service3', value: 'Software Development', Icon: MdAppSettingsAlt, description: 'Creating powerful and reliable software with the latest tools at hand ' },
     { key: 'service4', value: 'Game Development', Icon: FaGamepad, description: 'Creative technologist who brings video games to life by turning simple mechanics to and addicting gameplay' },
     { key: 'service5', value: 'Technical Consulting', Icon: FaUsers, description: 'Providing expert guidance on technology stack and project architecture.' },
     { key: 'service6', value: 'API & Backend Services', Icon: FaServer, description: 'Implementing secure non-sql servers & API hosting set-up.' },
