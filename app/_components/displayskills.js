@@ -5,14 +5,14 @@ import React from 'react'
 function DisplaySkills({ title, Icon: Symbol, programlang = [] }) {
     return (
         <div className='bg-gradient-to-r from-neutral-700 to-neutral-700 rounded-sm w-3/3'  >
-            <h1 className='h1fontChangeName pl-3 pt-3 pb-3 flex text-xl'>
+            <h1 className='h1fontChangeName p-3 flex text-xl'>
                 {Symbol && <Symbol size={24} />}
                 {title}
 
 
 
             </h1>
-            <div className='flex flex-wrap gap-2 p-3 '>
+            <div className='flex flex-wrap gap-2 pl-3 pb-5 '>
                 {programlang.map((lang, index) => (
                     <div
                         key={index}

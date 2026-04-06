@@ -76,7 +76,17 @@ export default function About() {
                                             { name: 'Dart', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
                                             { name: 'HTML & CSS', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
 
-
+                                        ]}
+                                    />
+                                    <DisplaySkills
+                                        Icon={MdAppSettingsAlt}
+                                        title={"Frontend frameworks & UI"}
+                                        programlang={[
+                                            { name: 'React', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'Next.Js', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'Tailwind CSS', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'ShadCn/UI', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'Flutter', bgColor: '#7131c6', borderColor: '#ffffff', textColor: '#ffffff' },
 
                                         ]}
                                     />
