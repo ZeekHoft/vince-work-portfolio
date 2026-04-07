@@ -66,135 +66,82 @@ export default function About() {
                             </p>
                             <div>
                                 <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Skills & Tools</h1>
-                                <div className='grid grid-cols-3 gap-5 '>
+                                <div className='grid grid-cols-3 gap-5'>
                                     <DisplaySkills
                                         Icon={MdCode}
                                         title={"Languages"}
                                         programlang={[
-                                            { name: 'Python', bgColor: '#3e3d41', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'JavaScript', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'TypeScript', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Java', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'C#', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Dart', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'HTML & CSS', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-
+                                            { name: 'Python', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'JavaScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'TypeScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'Java', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'C#', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'Dart', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'HTML & CSS', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
                                         ]}
                                     />
+
                                     <DisplaySkills
                                         Icon={SiReact}
-                                        title={"Frontend frameworks & UI"}
+                                        title={"Web & App Stack"}
                                         programlang={[
-                                            { name: 'React', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Next.Js', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Tailwind CSS', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'ShadCn/UI', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Flutter', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-
-                                        ]}
-                                    />
-                                    <DisplaySkills
-                                        Icon={MdStorage}
-                                        title={"Backend & APIs"}
-                                        programlang={[
-                                            { name: 'Flask', bgColor: '#712B13', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'FastAPI', bgColor: '#712B13', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'BetterAuth', bgColor: '#712B13', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'XAMPP / phpMyAdmin / Apache', bgColor: '#712B13', borderColor: '#ffffff', textColor: '#ffffff' },
-
+                                            { name: 'React', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Next.js', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Tailwind CSS', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'shadcn/ui', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Flutter', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Flask', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'FastAPI', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'BetterAuth', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'XAMPP / Apache', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Supabase', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Neon (PostgreSQL)', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Firebase', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Drizzle ORM', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
                                         ]}
                                     />
 
-
-                                    <DisplaySkills
-                                        Icon={FaLayerGroup}
-                                        title={"Databases & ORM"}
-                                        programlang={[
-                                            { name: 'Supabase', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Neon (PostgreSQL)', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Firebas', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'DrizzelOrm', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                        ]}
-                                    />
                                     <DisplaySkills
                                         Icon={MdCloud}
-                                        title={"Cloud & deployment"}
+                                        title={"DevOps & Tools"}
                                         programlang={[
-                                            { name: 'AWS', bgColor: '#633806', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Vercel', bgColor: '#633806', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Railway', bgColor: '#633806', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Docker', bgColor: '#633806', borderColor: '#ffffff', textColor: '#ffffff' },
-
+                                            { name: 'AWS', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Vercel', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Railway', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Docker', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Git', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'GitHub', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'npm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'pnpm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
                                         ]}
                                     />
+
                                     <DisplaySkills
                                         Icon={FaGamepad}
-                                        title={"Game development"}
+                                        title={"Other Platforms"}
                                         programlang={[
-                                            { name: 'Pygame', bgColor: '#27500A', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Godot', bgColor: '#27500A', borderColor: '#ffffff', textColor: '#ffffff' },
-
+                                            { name: 'Pygame', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Godot', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Tkinter', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Visual Studio', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Android Studio', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Pycharm', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Jetbrains', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
 
                                         ]}
                                     />
-
-                                    <DisplaySkills
-                                        Icon={FaDesktop}
-                                        title={"Desktop & GUI"}
-                                        programlang={[
-                                            { name: 'Visual Studio', bgColor: '#72243E', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Tkinter', bgColor: '#72243E', borderColor: '#ffffff', textColor: '#ffffff' },
-
-                                        ]}
-                                    />
-
-                                    <DisplaySkills
-                                        Icon={SiGit}
-                                        title={"Dev tools & version control"}
-                                        programlang={[
-                                            { name: 'Git', bgColor: '#444441', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'GitHub', bgColor: '#444441', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'npm', bgColor: '#444441', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'pnpm', bgColor: '#444441', borderColor: '#ffffff', textColor: '#ffffff' },
-
-                                        ]}
-                                    />
-
 
                                     <DisplaySkills
                                         Icon={MdAnalytics}
-                                        title={"Analytics & SEO"}
+                                        title={"Analytics & AI"}
                                         programlang={[
-                                            { name: 'Google Analytics', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Google Search Console', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Looker Studio', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Ahrefs', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
-
-                                        ]}
-                                    />
-
-                                    <DisplaySkills
-                                        Icon={MdSmartToy}
-                                        title={"AI & automation"}
-                                        programlang={[
-                                            { name: 'AI image & video recognition', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'N8N', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'PyautoGUI', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
-
-
-                                        ]}
-                                    />
-                                    <DisplaySkills
-                                        Icon={MdPhoneIphone}
-                                        title={"Skill areas"}
-                                        programlang={[
-                                            { name: 'Web Development', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'App Development', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Game Development', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'System Architecture', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'Software Development', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-                                            { name: 'AWS Clout Practitioner', bgColor: '#0C447C', borderColor: '#ffffff', textColor: '#ffffff' },
-
+                                            { name: 'Google Analytics', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Google Search Console', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Looker Studio', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Ahrefs', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'AI image & video', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'N8N', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'PyAutoGUI', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
                                         ]}
                                     />
                                 </div>
