@@ -71,7 +71,7 @@ export default function About() {
                                         Icon={MdCode}
                                         title={"Languages"}
                                         programlang={[
-                                            { name: 'Python', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'Python', bgColor: '#3e3d41', borderColor: '#ffffff', textColor: '#ffffff' },
                                             { name: 'JavaScript', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
                                             { name: 'TypeScript', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
                                             { name: 'Java', bgColor: '#3C3489', borderColor: '#ffffff', textColor: '#ffffff' },
@@ -175,10 +175,12 @@ export default function About() {
 
                                     <DisplaySkills
                                         Icon={MdSmartToy}
-                                        title={"AI & automation<"}
+                                        title={"AI & automation"}
                                         programlang={[
                                             { name: 'AI image & video recognition', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
                                             { name: 'N8N', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
+                                            { name: 'PyautoGUI', bgColor: '#085041', borderColor: '#ffffff', textColor: '#ffffff' },
+
 
                                         ]}
                                     />
