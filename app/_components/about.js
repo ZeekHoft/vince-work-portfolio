@@ -127,6 +127,8 @@ export default function About() {
                                             { name: 'Android Studio', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
                                             { name: 'Pycharm', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
                                             { name: 'Jetbrains', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Google Antigravit', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+
 
                                         ]}
                                     />

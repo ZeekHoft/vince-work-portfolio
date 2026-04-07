@@ -26,7 +26,7 @@ export default function Header() {
                     <div className=" flex gap-9 uppercase">
 
                         <Link href="#" className={` transition duration-300 ease-in-out transform hover:-translate-y-1 ${inactiveClasses}`}>Home</Link>
-                        <Link href="#service" className={` transition duration-300 ease-in-out transform hover:-translate-y-1 ${inactiveClasses}`}>Service</Link>
+                        <Link href="#service" className={` transition duration-300 ease-in-out transform hover:-translate-y-1 ${inactiveClasses}`}>SKILLS</Link>
 
                         <Link href="#about" className={` transition duration-300 ease-in-out transform hover:-translate-y-1 ${inactiveClasses}`}>About</Link>
                         {/* <Link href="#contact" className={inactiveClasses}>Contact</Link> */}
