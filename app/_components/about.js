@@ -116,6 +116,7 @@ export default function About() {
                                         programlang={[
                                             { name: 'Pygame', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
                                             { name: 'Godot', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
+                                            { name: 'Textual TUI', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
                                             { name: 'Tkinter', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
                                             { name: 'Visual Studio', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
                                             { name: 'Android Studio', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
