@@ -67,19 +67,7 @@ export default function About() {
                             <div>
                                 <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Skills & Tools</h1>
                                 <div className='grid grid-cols-3 gap-5'>
-                                    <DisplaySkills
-                                        Icon={MdCode}
-                                        title={"Languages"}
-                                        programlang={[
-                                            { name: 'Python', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'JavaScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'TypeScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'Java', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'C#', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'Dart', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'HTML & CSS', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                        ]}
-                                    />
+
 
                                     <DisplaySkills
                                         Icon={SiReact}
@@ -92,6 +80,12 @@ export default function About() {
                                             { name: 'Flutter', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
                                             { name: 'Flask', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
                                             { name: 'FastAPI', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'SQLAlchemy', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'aiosqlite', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Pydantic', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'PyJWT', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Jinja2', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
+                                            { name: 'Sentry', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
                                             { name: 'BetterAuth', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
                                             { name: 'XAMPP / Apache', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
                                             { name: 'Supabase', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
@@ -100,22 +94,22 @@ export default function About() {
                                             { name: 'Drizzle ORM', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
                                         ]}
                                     />
-
                                     <DisplaySkills
-                                        Icon={MdCloud}
-                                        title={"DevOps & Tools"}
+                                        Icon={MdAnalytics}
+                                        title={"Analytics & AI"}
                                         programlang={[
-                                            { name: 'AWS', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Vercel', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Railway', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Docker', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Git', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'GitHub', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'npm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'pnpm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Google Analytics', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Google Search Console', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Looker Studio', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Ahrefs', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'AI image & video', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'N8N', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'PyAutoGUI', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Prompt Engineering', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'Ollama', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+
                                         ]}
                                     />
-
                                     <DisplaySkills
                                         Icon={FaGamepad}
                                         title={"Other Platforms"}
@@ -134,16 +128,33 @@ export default function About() {
                                     />
 
                                     <DisplaySkills
-                                        Icon={MdAnalytics}
-                                        title={"Analytics & AI"}
+                                        Icon={MdCloud}
+                                        title={"DevOps & Tools"}
                                         programlang={[
-                                            { name: 'Google Analytics', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Google Search Console', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Looker Studio', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Ahrefs', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'AI image & video', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'N8N', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'PyAutoGUI', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
+                                            { name: 'AWS', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Vercel', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Railway', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Docker', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'Git', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'GitHub', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'npm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                            { name: 'pnpm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
+                                        ]}
+                                    />
+
+
+
+                                    <DisplaySkills
+                                        Icon={MdCode}
+                                        title={"Languages"}
+                                        programlang={[
+                                            { name: 'Python', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'JavaScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'TypeScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'Java', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'C#', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'Dart', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
+                                            { name: 'HTML & CSS', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
                                         ]}
                                     />
                                 </div>
