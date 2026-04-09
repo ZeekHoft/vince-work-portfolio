@@ -17,7 +17,7 @@
     "strict": false,
     "noEmit": true,
     "incremental": true,
-    "module": "esnext",
+    // "module": "esnext",
     "esModuleInterop": true,
     // "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -28,8 +28,9 @@
         "name": "next"
       }
     ],
-    "ignoreDeprecations": "6.0",
-    "moduleResolution": "node"
+    // "ignoreDeprecations": "6.0",
+    "module": "esnext",
+    "moduleResolution": "bundler"
   },
   "include": [
     "next-env.d.ts",
