@@ -80,6 +80,9 @@ const Services = () => {
                                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                     <div className="p-1">
                                         <Card className="group min-h-[250px] border-none bg-slate-900/50 backdrop-blur-sm transition-all duration-300 hover:bg-slate-900/80 md:h-80">
+                                            <span className="absolute top-4 right-5 text-6xl font-black text-white/[0.04] select-none leading-none">
+                                                {String(index + 1).padStart(2, '0')}
+                                            </span>
                                             <CardContent className="flex flex-col items-center justify-center p-6 text-center">
 
                                                 {/* Use the new IconWrapper here */}
