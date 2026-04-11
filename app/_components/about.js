@@ -61,8 +61,22 @@ export default function About() {
                                 Beyond core development, I thrive in high-pressure environments like hackathons, which have sharpened my skills in rapid prototyping, pitching, and teamwork. My team also recently completed
                                 <span className='h1fontChangeName font-bold'> "Deception Detector"</span>,
                                 a research-driven project designed to combat misinformation in the Philippines. This project led us to compete in the Google Solution Challenge (2024) and Visayas Solutions (2024), and most recently, I was selected as one of the Top 6 Lightning Speakers in Cebu (2025).
+                            </p>
 
+                            <p className="pt-5 pb-5 text-lg md:text-xl space-y-4 textGray">
+                                During my internship, I had the opportunity to work within a professional development environment across a
+                                <span className='h1fontChangeName font-bold'> 3-month engagement</span>.
+                                My first project involved building an
+                                <span className='h1fontChangeName font-bold'> AI-powered content generation system </span>
+                                leveraging automation workflows and large language models to produce SEO and AEO-optimized blog content,
+                                with a focus on prompt engineering, Google Search Console integration, and organic search visibility.
 
+                                The latter half of my internship shifted toward
+                                <span className='h1fontChangeName font-bold'> data analytics and technical SEO</span>
+                                working directly with client websites to extract and visualize performance data using
+                                <span className='h1fontChangeName font-bold'> GA4, Looker Studio, and automated reporting pipelines</span>.
+                                I also conducted structured backlink audits across multiple client properties, identifying and documenting
+                                broken links and remediation strategies using industry-standard SEO tooling.
                             </p>
                             <div>
                                 <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Skills & Tools</h1>
@@ -174,3 +188,22 @@ export default function About() {
 
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
