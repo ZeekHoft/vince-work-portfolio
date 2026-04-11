@@ -195,7 +195,7 @@ const Services = () => {
                     <Displayprojct
                         imgSrc={"./layers.jpg"}
                         title={"Lead Gen Website"}
-                        link={"https://lead-gen-website-gamma.vercel.app"}
+                        link={"https://project-leads-hub.vercel.app"}
                         context={"a marketing tool specifically designed to convert visitors into potential customers (leads) by collecting their contact information, usually through forms in exchange for services. "}
                         badges={[
 
