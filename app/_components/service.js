@@ -270,7 +270,25 @@ const Services = () => {
                             { name: 'Sentry', icon: '🦉', bgColor: '#362d591a', borderColor: '#362d59', textColor: '#ffffff' },
                         ]}
                     />
+                    <Displayprojct
+                        imgSrc={"./garble.png"}
+                        title={"Garble Encryption"}
+                        link={"https://github.com/ZeekHoft/Garble"}
+                        context={"A CLI tool made for encrypting txt files, to store in your secrets and trusting my software to hide its content in the most safest way."}
+                        badges={[
+                            {
+                                name: 'Python', icon: '🐍', bgColor: '#101a24', borderColor: '#1f3d5a', textColor: '#3776ab'
+                            },
 
+                            {
+                                name: 'CLI', icon: '💻', bgColor: '#1a1a1a', borderColor: '#333333', textColor: '#4ade80'
+                            },
+
+                            {
+                                name: 'Textual', icon: '📟', bgColor: '#170c32', borderColor: '#3c1e70', textColor: '#ab7df8'
+                            }
+                        ]}
+                    />
                 </div>
             </ComponentBlurAnimation>
 
