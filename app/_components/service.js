@@ -271,7 +271,7 @@ const Services = () => {
                         ]}
                     />
                     <Displayprojct
-                        imgSrc={"./garble.png"}
+                        imgSrc={"./garble.jpg"}
                         title={"Garble Encryption"}
                         link={"https://github.com/ZeekHoft/Garble"}
                         context={"A CLI tool made for encrypting txt files, to store in your secrets and trusting my software to hide its content in the most safest way."}
