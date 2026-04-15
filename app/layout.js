@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Work Portfolio",
+  title: "Vince Portfolio",
   description: "Work Portfolio of Francis Vince Jaca",
 };
 

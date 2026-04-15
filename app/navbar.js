@@ -2,49 +2,58 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import myLocalFont from './_components/globalfont';
-import { NavDropDown, } from "./_components/animation";
+import { NavDropDown } from "./_components/animation";
+
+const navLinks = [
+    { href: "#", label: "Home" },
+    { href: "#service", label: "Skills" },
+    { href: "#about", label: "About" },
+];
+
 export default function Header() {
     const pathname = usePathname();
-    const inactiveClasses = " relative text-3xl text-yellow-400 drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]  navBarText";
-    const activeClasses = "navBarColorActive";
-
-    const getLinkClasses = (href) => {
-        const isActive = pathname === href;
-        return ` ${isActive ? activeClasses : inactiveClasses}`;
-    }
-
 
     return (
-        <NavDropDown
-        >
-            {/* during animation the contents overlaps the navbar by adding the z-50, it pushes them below */}
+        <NavDropDown>
+            <nav className={`${myLocalFont.className} fixed top-4 w-screen flex justify-center items-center px-4 z-100`}>
+                <div className="flex justify-between items-center w-full max-w-5xl mx-auto px-6 py-3 rounded-2xl
+                    border border-yellow-400/10 bg-black/40 backdrop-blur-md shadow-[0_0_30px_rgba(241,198,4,0.05)]
+                    transition-all duration-300">
 
-            <nav className={` ${myLocalFont.className} fixed top-4 w-screen justify-center items-center px-4 navbar-item z-100 `}>
-                <div className="flex justify-between items-center w-full max-w-6xl mx-auto  p-3 shadow-lg rounded-lg navBarColor">
-                    <div className="textGray font-bold" />
+                    {/* Logo / Name */}
+                    <span className="text-yellow-400 text-sm font-bold tracking-widest uppercase
+                        drop-shadow-[0_0_6px_rgba(250,204,21,0.4)]">
+                        FVJ
+                    </span>
 
-                    <div className=" flex gap-9 uppercase">
+                    {/* Links */}
+                    <div className="flex gap-8 uppercase">
+                        {navLinks.map(({ href, label }) => (
+                            <Link
+                                key={href}
+                                href={href}
+                                className="group relative text-sm font-bold tracking-widest text-yellow-400
+                                    drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]
+                                    transition-all duration-300 hover:-translate-y-0.5"
+                            >
+                                {label}
 
-                        <Link href="#" className={` transition duration-300 ease-in-out transform hover:-translate-y-1 ${inactiveClasses}`}>Home</Link>
-                        <Link href="#service" className={` transition duration-300 ease-in-out transform hover:-translate-y-1 ${inactiveClasses}`}>SKILLS</Link>
-
-                        <Link href="#about" className={` transition duration-300 ease-in-out transform hover:-translate-y-1 ${inactiveClasses}`}>About</Link>
-                        {/* <Link href="#contact" className={inactiveClasses}>Contact</Link> */}
+                                <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-to-r
+                                    from-transparent via-yellow-400 to-transparent
+                                    transition-all duration-300 group-hover:w-full" />
+                            </Link>
+                        ))}
                     </div>
-                    <div className="textGrayfont-bold" />
+
+                    <div className="flex items-center gap-1.5">
+                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-400 animate-pulse" />
+                        <span className="text-yellow-400/40 text-xs tracking-widest uppercase">
+                            Available
+                        </span>
+                    </div>
 
                 </div>
             </nav>
-
-
-
         </NavDropDown>
-
-
-
-
-
-
-    )
-
+    );
 }
