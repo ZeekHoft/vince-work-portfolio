@@ -60,12 +60,12 @@ const Services = () => {
     return (
 
         <div className={`p-4  ${myLocalFont.className} `}>
+            <h1 className="h1fontChangeName pt-10 text-5xl flex gap-5 uppercase text-center md:justify-center pt-10 md: text-3xl md:flex-row ">
+                <BlurAnimation>Services</BlurAnimation>
 
+            </h1>
             <div className="mt-20">
-                <h1 className="h1fontChangeName text-5xl flex gap-5 md:flex-row md: justify-center uppercase md: text-3xl pb-10 ">
-                    <BlurAnimation>Services</BlurAnimation>
 
-                </h1>
                 <ComponentBlurAnimation>
 
                     <Carousel
