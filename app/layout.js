@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import SmoothScroll from "@/components/smoothscroll";
 import './globals.css'
 
 
@@ -25,11 +26,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {/* add pt-3 or other num to add padding to navbar */}
-        <div className="">
-          {children}
-        </div>
+        <SmoothScroll>
+          <Navbar />
+          {/* add pt-3 or other num to add padding to navbar */}
+          <div className="">
+            {children}
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );
