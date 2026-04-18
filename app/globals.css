@@ -208,7 +208,7 @@
 /* ---ALL CHANGES FOR BACKGROUND COLOR HERE--- */
 :root {
   --radius: 0.625rem;
-  --background: #333333;
+  --background: #000000;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -294,7 +294,7 @@
 
 
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -302,3 +302,37 @@ html {
 /* section {
   scroll-margin-top: 80px;
 } */
+
+/* Hide default scrollbar for sleek feel */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Lenis Smooth Scrolling Boilerplate */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

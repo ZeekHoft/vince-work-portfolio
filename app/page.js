@@ -19,6 +19,7 @@ export default function Home() {
       </div>
 
       <div className='pt-5 md:pt-5'>
+
         <section id="service" className=" min-h-screen">
           <Services />
         </section>
