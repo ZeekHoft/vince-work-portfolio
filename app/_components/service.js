@@ -21,21 +21,12 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import SmoothScroll from "@/components/smoothscroll";
-import {
-    Dialog,
-    DialogContent,
-    DialogTitle,
-    DialogTrigger,
-    DialogHeader,
-} from "@/components/ui/dialog"
+
 import { DeviceFrameset } from 'react-device-frameset'
 import 'react-device-frameset/styles/marvel-devices.min.css'
 import CurrentTime from "@/components/ui/current-time";
+import ProWidget from "./prowidget";
 
-
-import ListProjects from "./listproprojects";
-import ListCertificates from "./listcertificates";
 const IconWrapper = ({ Icon }) => (
     <div className="group relative mb-6">
         {/* Animated Yellow Glow (hidden until hover) */}
@@ -70,7 +61,13 @@ const IconWrapper = ({ Icon }) => (
 
 // ];
 
+
 const Services = () => {
+    const AppCompnents = [
+        <ProWidget key="pro work" value="Proffessional Projects" />,
+        <ProWidget key="game work" value="Hackathon Projects" />,
+    ]
+
     return (
 
         <div className={`p-4  ${myLocalFont.className} `}>
@@ -132,7 +129,7 @@ const Services = () => {
                 <div className="relative">
 
                     {/* Outer tablet body */}
-                    <div className="relative bg-zinc-900 rounded-[40px] p-4 shadow-2xl shadow-yellow-400/10"
+                    <div className="relative bg-zinc-900 rounded-[40px] p-4 shadow-2xl shadow-yellow-400/10 mr-20 ml-20"
                         style={{
                             border: '2px solid rgba(250, 204, 21, 0.15)',
                             boxShadow: '0 0 60px rgba(250,204,21,0.05), 0 30px 80px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.05)'
@@ -164,60 +161,31 @@ const Services = () => {
                             </div>
 
                             {/* Your app grid content */}
-                            <div className="bg-black p-6 w">
+                            <div className="bg-black p-6 ">
 
                                 <ComponentBlurAnimation>
+                                    <Carousel className="grid grid-cols-1">
+                                        <CarouselContent>
+                                            {AppCompnents.map((SlideComponent, index) => (
+                                                <CarouselItem key={index}>
+                                                    <div className="">
+                                                        {/* You can still wrap them in a Card if you want a consistent border */}
+                                                        <Card className="bg-zinc-950 border-zinc-800">
+                                                            <h3 className="mb-2 text-xl font-bold h1fontChangeName text-center ">{SlideComponent.props.value}</h3>
 
-                                    <div className="grid grid-cols-2 gap-20 pt-10 lg:w-300 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-8 m-5 md:m-10 lg:m-20 ">
+                                                            <CardContent className="flex items-center justify-center ">
 
-
-                                        <ListProjects />
-
-                                        <Dialog>
-                                            <DialogTrigger asChild>
-                                                <div className="group cursor-pointer flex flex-col items-center gap-2 w-[80px]">
-                                                    <div className="w-[110px] h-[110px] rounded-[16px] overflow-hidden 
-            border border-white/10 shadow-lg shadow-black/30
-            transition-all duration-200 
-            group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-black/40
-            group-active:scale-95">
-                                                        <img
-                                                            src={"./thumbnail.png"}
-                                                            className="w-full h-full object-cover"
-                                                        />
+                                                                {SlideComponent}
+                                                            </CardContent>
+                                                        </Card>
                                                     </div>
-                                                    <span className="text-[11px] text-center text-white/80 leading-tight max-w-[72px] truncate">
-                                                        Certificates
-                                                    </span>
-                                                </div>
-                                            </DialogTrigger>
-                                            <DialogContent
-                                                showCloseButton={false}
-                                                style={{ maxWidth: '90vw', width: '90vw' }}
-                                                className="p-6"
-                                                // This prevents scroll from leaking to background
-                                                onWheel={(e) => e.stopPropagation()}
-                                            >
-                                                <DialogTitle className="text-white text-4xl h1fontChangeName text-center">Certificates Gallery</DialogTitle>
-                                                <div
-                                                    className="-mx-6 max-h-[70vh] overflow-y-auto px-6"
-                                                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-                                                    onWheel={(e) => e.stopPropagation()}
-                                                >
-                                                    <SmoothScroll>
-                                                        <style>{`div::-webkit-scrollbar { display: none; }`}</style>
+                                                </CarouselItem>
+                                            ))}
+                                        </CarouselContent>
+                                        {/* <CarouselPrevious />
+                                        <CarouselNext /> */}
+                                    </Carousel>
 
-                                                        <div className="-mx-6 no-scrollbar max-h-[70vh] overflow-y-auto px-6">
-                                                            <div className="space-y-6 py-2">
-                                                                <ListCertificates />
-                                                            </div>
-                                                        </div>
-                                                    </SmoothScroll>
-                                                </div>
-                                            </DialogContent>
-                                        </Dialog>
-
-                                    </div>
                                 </ComponentBlurAnimation>
                             </div>
 
