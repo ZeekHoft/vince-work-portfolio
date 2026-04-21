@@ -34,7 +34,7 @@ import 'react-device-frameset/styles/marvel-devices.min.css'
 import CurrentTime from "@/components/ui/current-time";
 
 
-import ListProjects from "./listprojects";
+import ListProjects from "./listproprojects";
 
 const IconWrapper = ({ Icon }) => (
     <div className="group relative mb-6">
@@ -154,7 +154,7 @@ const Services = () => {
 
                             {/* Fake iOS status bar */}
                             <div className="flex justify-between items-center px-6 py-2 bg-black/80">
-                                <span className="text-white/40 text-[10px] font-mono">
+                                <span className="text-white/40 text-[1px] font-mono">
                                     <CurrentTime />
                                 </span>
                                 <div className="flex gap-1 items-center">
@@ -168,7 +168,7 @@ const Services = () => {
 
                                 <ComponentBlurAnimation>
 
-                                    <div className="grid grid-cols-2 gap-20 pt-10 lg:w-300 place-items-center md:grid-cols-5 lg:grid-cols-4 gap-8 m-5 md:m-10 lg:m-20 ">
+                                    <div className="grid grid-cols-2 gap-20 pt-10 lg:w-300 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-8 m-5 md:m-10 lg:m-20 ">
 
 
                                         <ListProjects />

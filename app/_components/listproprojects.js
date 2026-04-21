@@ -119,7 +119,7 @@ export default function ListProjects() {
                 imgSrc={"./callblog.png"}
                 title={"Callblog"}
                 link={"https://callblog.vercel.app"}
-                context={"An automated AI content genrator for blogs that caters the idea of businesses."}
+                context={"An automated AI content generator for blogs that caters the idea of businesses."}
                 badges={[
 
                     {
