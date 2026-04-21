@@ -49,11 +49,21 @@ export default function Contact() {
 
             <div className="flex flex-col md:flex-row justify-between items-center mt-32 border-t border-white/10 pt-10 text-gray-500 font-light text-[10px] md:text-xs uppercase tracking-widest gap-4 md:gap-0">
                 <div className="flex gap-6 md:gap-10">
-                    <Magnetic strength={0.2}><a href="https://www.linkedin.com/in/francis-vince-jaca-359532305" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a></Magnetic>
-                    <Magnetic strength={0.2}><a href="https://www.facebook.com/francisvince.jaca" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a></Magnetic>
-                    <Magnetic strength={0.2}><a href="mailto:francisvincecj@gmail.com" className="hover:text-white transition-colors">Email</a></Magnetic>
+                    <Magnetic strength={0.5}><a href="https://www.linkedin.com/in/francis-vince-jaca-359532305" target="_blank" rel="noopener noreferrer" className="group relative text-sm tracking-widest text-yellow-400
+                                    drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]
+                                    transition-all duration-300 hover:-translate-y-0.5">
+                        LinkedIn</a></Magnetic>
+                    <Magnetic strength={0.5}><a href="https://www.facebook.com/francisvince.jaca" target="_blank" rel="noopener noreferrer" className="group relative text-sm tracking-widest text-yellow-400
+                                    drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]
+                                    transition-all duration-300 hover:-translate-y-0.5">
+                        Facebook</a></Magnetic>
+                    <Magnetic strength={0.5}><a href="mailto:francisvincecj@gmail.com" className="group relative text-sm tracking-widest text-yellow-400
+                                    drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]
+                                    transition-all duration-300 hover:-translate-y-0.5">Email</a></Magnetic>
                 </div>
-                <p>© {new Date().getFullYear()} Francis Vince Jaca</p>
+                <p className="group relative text-sm  tracking-widest text-yellow-400
+                                    drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]
+                                    transition-all duration-300 hover:-translate-y-0.5">© {new Date().getFullYear()} Francis Vince Jaca</p>
             </div>
         </div>
     );
