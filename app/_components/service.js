@@ -1,3 +1,5 @@
+"use client";
+
 
 import { FaMobileAlt, FaLaptopCode } from "react-icons/fa";
 import { FaPencilRuler, FaUsers } from "react-icons/fa";
@@ -19,13 +21,14 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import SmoothScroll from "@/components/smoothscroll";
 import {
     Dialog,
     DialogContent,
     DialogTitle,
     DialogTrigger,
+    DialogHeader,
 } from "@/components/ui/dialog"
-
 
 const IconWrapper = ({ Icon }) => (
     <div className="group relative mb-6">
@@ -65,6 +68,7 @@ const Services = () => {
     return (
 
         <div className={`p-4  ${myLocalFont.className} `}>
+
             {/* <h1 className="h1fontChangeName pt-10 text-5xl flex gap-5 uppercase text-center md:justify-center pt-10 md: text-3xl md:flex-row ">
                 <BlurAnimation>Services</BlurAnimation>
 
@@ -296,59 +300,92 @@ const Services = () => {
                             }
                         ]}
                     />
+
+                    <Dialog>
+                        <DialogTrigger asChild>
+                            <div className="group cursor-pointer flex flex-col items-center gap-2 w-[80px]">
+                                <div className="w-[110px] h-[110px] rounded-[16px] overflow-hidden 
+            border border-white/10 shadow-lg shadow-black/30
+            transition-all duration-200 
+            group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-black/40
+            group-active:scale-95">
+                                    <img
+                                        src={"./cs50.jpg"}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <span className="text-[11px] text-center text-white/80 leading-tight max-w-[72px] truncate">
+                                    Certificates
+                                </span>
+                            </div>
+                        </DialogTrigger>
+                        <DialogContent
+                            showCloseButton={false}
+                            style={{ maxWidth: '90vw', width: '90vw' }}
+                            className="p-6"
+                            // This prevents scroll from leaking to background
+                            onWheel={(e) => e.stopPropagation()}
+                        >
+                            <DialogTitle className="text-white">Certificates Gallery</DialogTitle>
+                            <SmoothScroll>
+                                <div
+                                    className="-mx-6 max-h-[70vh] overflow-y-auto px-6"
+                                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                                    onWheel={(e) => e.stopPropagation()}
+                                >
+                                    <style>{`div::-webkit-scrollbar { display: none; }`}</style>
+                                    <div className="space-y-6 py-2">
+
+                                        <div className="-mx-6 no-scrollbar max-h-[70vh] overflow-y-auto px-6">
+                                            <div className="space-y-6 py-2">
+                                                <DisplayCertificate
+                                                    imgSrc={"./cs50.jpg"}
+                                                    alt={"cs50"}
+                                                    title={"CS50 Certificate Completed on 2023"}
+                                                    context={"Gaining a CS50 Certificate provides proof of foundational computer science skills in languages like C, Python, SQL, JS, HTML/CSS, plus concepts like algorithms & data structures, demonstrating discipline and problem-solving to employers, even if it's not a formal degree, by showing you can tackle challenging problems and build projects, which is great for resumes, LinkedIn, and boosting confidence for further learning. "}
+                                                    link={"https://home.edx.org/"}
+                                                />
+
+                                                <DisplayCertificate
+                                                    imgSrc={"./aws.jpg"}
+                                                    alt={"aws"}
+                                                    title={"AWS Cloud Practitoner Certificate Completed 2025"}
+                                                    context={"Gaining the AWS Cloud Practitioner certificate gives me a foundational cloud knowledge, validates your AWS understanding for employers, boosts your resume with an in-demand credential, and serves as an excellent starting point for technical roles (like Architect, Developer) or enhances non-technical roles (Sales, Marketing, PM) by improving cloud fluency and communication, leading to better career opportunities and increased credibility in the booming cloud industry. "}
+                                                    link={"https://aws.amazon.com/certification/certified-cloud-practitioner/"}
+                                                />
+
+
+                                                <DisplayCertificate
+                                                    imgSrc={"./cpugad.jpg"}
+                                                    alt={"cpugad"}
+                                                    title={"Central Launch 2.0: Startup Hackathon 2025"}
+                                                    context={"Awarded for participating in the Western Visayas Startup Hackathon at Central Philippine University. This experience involved collaborating in a high-pressure environment to ideate and prototype technological advancements for the local startup ecosystem. It validates my commitment to innovation, rapid development, and the ability to pitch technological solutions to real-world business challenges."}
+                                                    link={"https://www.facebook.com/profile.php?id=61556789063072"}
+                                                />
+
+
+
+                                                <DisplayCertificate
+                                                    imgSrc={"./solutions.jpg"}
+                                                    alt={"solutions"}
+                                                    title={"Google Solution Challenge 2024 Certificate"}
+                                                    context={"Developed a 'Vision Detect' AI system using Python and TensorFlow to measure spatial distances between objects and navigation paths. This project highlights my expertise in computer vision, specifically in object detection and spatial awareness algorithms. By submitting this for the Google Solution Challenge, I demonstrated how AI can be leveraged to improve navigation and safety, showcasing a practical application of machine learning to solve complex environmental interaction problems."}
+                                                    link={"https://developers.google.com/community/gdsc-solution-challenge"}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SmoothScroll>
+                        </DialogContent>
+                    </Dialog>
+
                 </div>
-            </ComponentBlurAnimation>
+            </ComponentBlurAnimation >
 
 
-            <div className="m-5 md:m-10 lg:m-20">
-                <ComponentBlurAnimation>
 
-                    <DisplayCertificate
-                        imgSrc={"./cs50.jpg"}
-                        alt={"cs50"}
-                        title={"CS50 Certificate Completed on 2023"}
-                        context={"Gaining a CS50 Certificate provides proof of foundational computer science skills in languages like C, Python, SQL, JS, HTML/CSS, plus concepts like algorithms & data structures, demonstrating discipline and problem-solving to employers, even if it's not a formal degree, by showing you can tackle challenging problems and build projects, which is great for resumes, LinkedIn, and boosting confidence for further learning. "}
-                        link={"https://home.edx.org/"}
-                    />
-                </ComponentBlurAnimation>
-
-                <ComponentBlurAnimation>
-                    <DisplayCertificate
-                        imgSrc={"./aws.jpg"}
-                        alt={"aws"}
-                        title={"AWS Cloud Practitoner Certificate Completed 2025"}
-                        context={"Gaining the AWS Cloud Practitioner certificate gives me a foundational cloud knowledge, validates your AWS understanding for employers, boosts your resume with an in-demand credential, and serves as an excellent starting point for technical roles (like Architect, Developer) or enhances non-technical roles (Sales, Marketing, PM) by improving cloud fluency and communication, leading to better career opportunities and increased credibility in the booming cloud industry. "}
-                        link={"https://aws.amazon.com/certification/certified-cloud-practitioner/"}
-                    />
-                </ComponentBlurAnimation>
-
-                <ComponentBlurAnimation>
-
-                    <DisplayCertificate
-                        imgSrc={"./cpugad.jpg"}
-                        alt={"cpugad"}
-                        title={"Central Launch 2.0: Startup Hackathon 2025"}
-                        context={"Awarded for participating in the Western Visayas Startup Hackathon at Central Philippine University. This experience involved collaborating in a high-pressure environment to ideate and prototype technological advancements for the local startup ecosystem. It validates my commitment to innovation, rapid development, and the ability to pitch technological solutions to real-world business challenges."}
-                        link={"https://www.facebook.com/profile.php?id=61556789063072"}
-                    />
-                </ComponentBlurAnimation>
-
-
-                <ComponentBlurAnimation>
-
-                    <DisplayCertificate
-                        imgSrc={"./solutions.jpg"}
-                        alt={"solutions"}
-                        title={"Google Solution Challenge 2024 Certificate"}
-                        context={"Developed a 'Vision Detect' AI system using Python and TensorFlow to measure spatial distances between objects and navigation paths. This project highlights my expertise in computer vision, specifically in object detection and spatial awareness algorithms. By submitting this for the Google Solution Challenge, I demonstrated how AI can be leveraged to improve navigation and safety, showcasing a practical application of machine learning to solve complex environmental interaction problems."}
-                        link={"https://developers.google.com/community/gdsc-solution-challenge"}
-                    />
-                </ComponentBlurAnimation>
-
-
-            </div>
-
-        </div>
+        </div >
     );
 };
 

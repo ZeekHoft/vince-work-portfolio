@@ -303,6 +303,11 @@
   scroll-margin-top: 80px;
 } */
 
+
+
+
+
+
 /* Hide default scrollbar for sleek feel */
 ::-webkit-scrollbar {
   display: none;
@@ -310,9 +315,7 @@
 
 * {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 /* Lenis Smooth Scrolling Boilerplate */
