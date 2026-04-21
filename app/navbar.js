@@ -6,7 +6,7 @@ import { NavDropDown } from "./_components/animation";
 
 const navLinks = [
     { href: "#", label: "Home" },
-    { href: "#service", label: "Skills" },
+    { href: "#service", label: "Apps" },
     { href: "#about", label: "About" },
 ];
 

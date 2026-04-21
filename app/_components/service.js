@@ -154,7 +154,7 @@ const Services = () => {
                         ]}
                     />
                     <Displayprojct
-                        imgSrc={"./deception.jpg"}
+                        imgSrc={"./deception.png"}
                         title={"Deception Detector"}
                         link={"https://the-deception-detector.vercel.app/home"}
                         context={"Developed a browser-based fact-checking system for Philippine news claims using NLP and optional AI. "}
@@ -176,7 +176,7 @@ const Services = () => {
                         ]}
                     />
                     <Displayprojct
-                        imgSrc={"./blogs.jpg"}
+                        imgSrc={"./likely.png"}
                         title={"Likely Blogs"}
                         link={"https://blog-crud-two.vercel.app"}
                         context={"A simple sight where you can post things that have or likely to happen in your life "}
@@ -262,7 +262,7 @@ const Services = () => {
 
 
                     <Displayprojct
-                        imgSrc={"./fastapi.png"}
+                        imgSrc={"./fast-api.png"}
                         title={"FastAPI Blog"}
                         link={"https://github.com/ZeekHoft/fastapi-blog"}
                         context={"A blog posting project created with the sole purpose of learning and understanding how FastAPI works. This project has the generic features of a normal blogposting site, authentication, CRUD, database, file and API route management."}
