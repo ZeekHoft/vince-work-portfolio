@@ -19,7 +19,12 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
-
+import {
+    Dialog,
+    DialogContent,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
 
 
 const IconWrapper = ({ Icon }) => (
@@ -60,11 +65,12 @@ const Services = () => {
     return (
 
         <div className={`p-4  ${myLocalFont.className} `}>
-            <h1 className="h1fontChangeName pt-10 text-5xl flex gap-5 uppercase text-center md:justify-center pt-10 md: text-3xl md:flex-row ">
+            {/* <h1 className="h1fontChangeName pt-10 text-5xl flex gap-5 uppercase text-center md:justify-center pt-10 md: text-3xl md:flex-row ">
                 <BlurAnimation>Services</BlurAnimation>
 
-            </h1>
-            <div className="mt-20">
+            </h1> */}
+
+            {/* <div className="mt-20">
 
                 <ComponentBlurAnimation>
 
@@ -85,7 +91,6 @@ const Services = () => {
                                             </span>
                                             <CardContent className="flex flex-col items-center justify-center p-6 text-center">
 
-                                                {/* Use the new IconWrapper here */}
                                                 <IconWrapper
                                                     Icon={item.Icon}
                                                     colorClass="text-blue-400" // You can keep your logic or hardcode colors here
@@ -105,14 +110,16 @@ const Services = () => {
                 </ComponentBlurAnimation>
 
 
-            </div>
-            <h1 className="h1fontChangeName pt-10 text-5xl flex gap-5 uppercase text-center md:justify-center pt-10 md: text-3xl md:flex-row ">
+            </div> */}
+            {/* <h1 className="h1fontChangeName pt-10 text-5xl flex gap-5 uppercase text-center md:justify-center pt-10 md: text-3xl md:flex-row ">
                 <BlurAnimation>Projects & Certifcates</BlurAnimation>
 
-            </h1>
+            </h1> */}
             <ComponentBlurAnimation>
 
                 <div className="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-8 m-5 md:m-10 lg:m-20">
+
+
                     <Displayprojct
                         imgSrc={"./compass2.jpg"}
                         title={"CS Compass"}
