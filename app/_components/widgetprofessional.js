@@ -11,10 +11,10 @@ import ListProjects from "./listproprojects";
 import ListCertificates from "./listcertificates";
 import SmoothScroll from "@/components/smoothscroll";
 
-export default function ProWidget() {
+export default function WidgetProfessional() {
     return (
         <>
-            <div className="grid grid-cols-2 gap-20 pt-10 lg:w-300 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-8 m-5 md:m-10 lg:m-20 ">
+            <div className="grid grid-cols-2 gap-20 pt-10 lg:w-300 place-items-center md:grid-cols-3 lg:grid-cols-5 gap-8 m-5 md:m-10 lg:m-20 ">
 
 
                 <ListProjects />

@@ -25,7 +25,8 @@ import {
 import { DeviceFrameset } from 'react-device-frameset'
 import 'react-device-frameset/styles/marvel-devices.min.css'
 import CurrentTime from "@/components/ui/current-time";
-import ProWidget from "./prowidget";
+import WidgetProfessional from "./widgetprofessional";
+import WidgetHackathon from "./widgethackathon";
 
 const IconWrapper = ({ Icon }) => (
     <div className="group relative mb-6">
@@ -64,8 +65,8 @@ const IconWrapper = ({ Icon }) => (
 
 const Services = () => {
     const AppCompnents = [
-        <ProWidget key="pro work" value="Proffessional Projects" />,
-        <ProWidget key="game work" value="Hackathon Projects" />,
+        <WidgetProfessional key="pro work" value="Proffessional Projects" />,
+        <WidgetHackathon key="game work" value="Hackathon Projects" />,
     ]
 
     return (
