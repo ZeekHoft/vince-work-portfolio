@@ -282,7 +282,7 @@ const Services = () => {
                         ]}
                     />
                     <Displayprojct
-                        imgSrc={"./garble.jpg"}
+                        imgSrc={"./garble.png"}
                         title={"Garble Encryption"}
                         link={"https://github.com/ZeekHoft/Garble"}
                         context={"A CLI tool made for encrypting txt files, to store in your secrets and trusting my software to hide its content in the most safest way."}
@@ -310,7 +310,7 @@ const Services = () => {
             group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-black/40
             group-active:scale-95">
                                     <img
-                                        src={"./cs50.jpg"}
+                                        src={"./thumbnail.png"}
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -338,6 +338,14 @@ const Services = () => {
 
                                         <div className="-mx-6 no-scrollbar max-h-[70vh] overflow-y-auto px-6">
                                             <div className="space-y-6 py-2">
+                                                <DisplayCertificate
+                                                    imgSrc={"./research.jpg"}
+                                                    alt={"cs50"}
+                                                    title={"2nd Place Advance Technologies Award "}
+                                                    context={"Receiving our 2nd place award in during the 20th CPU Student Research Symposium where our research project 'Deception Detector' got recognized for it's advance use of hybrid NLP and AI to unmask fake news in the Philippines.  "}
+                                                    link={"https://www.facebook.com/photo/?fbid=1019563250730411&set=a.199374552749289"}
+                                                />
+
                                                 <DisplayCertificate
                                                     imgSrc={"./cs50.jpg"}
                                                     alt={"cs50"}
