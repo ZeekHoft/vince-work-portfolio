@@ -32,7 +32,7 @@ export default function Home() {
 
         </section>
 
-        <section id="contact" className='pt-20 md:pt-5'>
+        <section id="contact" className='py-32 lg:py-40 border-t border-white/5'>
           <Contact />
         </section>
       </div >

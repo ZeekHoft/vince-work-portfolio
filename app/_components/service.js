@@ -326,13 +326,13 @@ const Services = () => {
                             // This prevents scroll from leaking to background
                             onWheel={(e) => e.stopPropagation()}
                         >
-                            <DialogTitle className="text-white">Certificates Gallery</DialogTitle>
-                            <SmoothScroll>
-                                <div
-                                    className="-mx-6 max-h-[70vh] overflow-y-auto px-6"
-                                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-                                    onWheel={(e) => e.stopPropagation()}
-                                >
+                            <DialogTitle className="text-white text-4xl h1fontChangeName text-center">Certificates Gallery</DialogTitle>
+                            <div
+                                className="-mx-6 max-h-[70vh] overflow-y-auto px-6"
+                                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                                onWheel={(e) => e.stopPropagation()}
+                            >
+                                <SmoothScroll>
                                     <style>{`div::-webkit-scrollbar { display: none; }`}</style>
                                     <div className="space-y-6 py-2">
 
@@ -383,8 +383,8 @@ const Services = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </SmoothScroll>
+                                </SmoothScroll>
+                            </div>
                         </DialogContent>
                     </Dialog>
 
