@@ -1,7 +1,13 @@
 import React from 'react'
+import {
+    Dialog,
+    DialogContent,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
 
 
-const DisplayCertificate = ({ imgSrc, alt, title, link, iconlink, context, badges = [] }) => {
+const DisplayCertificate = ({ imgSrc, alt, title, link, context = [] }) => {
     return (
         <div >
             <div className='group pt-10'>

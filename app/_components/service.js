@@ -117,7 +117,7 @@ const Services = () => {
             </h1> */}
             <ComponentBlurAnimation>
 
-                <div className="grid grid-cols-1 md:md:grid-cols-2 lg:grid-cols-3 gap-8 m-5 md:m-10 lg:m-20">
+                <div className="grid grid-cols-2 place-items-center md:grid-cols-5 lg:grid-cols-3 gap-8 m-5 md:m-10 lg:m-20">
 
 
                     <Displayprojct
