@@ -31,6 +31,7 @@ import {
 } from "@/components/ui/dialog"
 import { DeviceFrameset } from 'react-device-frameset'
 import 'react-device-frameset/styles/marvel-devices.min.css'
+import CurrentTime from "@/components/ui/current-time";
 
 const IconWrapper = ({ Icon }) => (
     <div className="group relative mb-6">
@@ -40,7 +41,7 @@ const IconWrapper = ({ Icon }) => (
         {/* Main Icon Container */}
         <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl
         border border-white/20 bg-white/5 backdrop-blur-sm shadow-xl transition-all duration-300
-        group-hover:-translate-y-1 group-hover:border-yellow-400/50 group-hover:bg-white/10">
+        group-hover:-translate-y-1 group-hover:bosrder-yellow-400/50 group-hover:bg-white/10">
 
             {/* Reflective Top Highlight */}
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
@@ -150,7 +151,9 @@ const Services = () => {
 
                             {/* Fake iOS status bar */}
                             <div className="flex justify-between items-center px-6 py-2 bg-black/80">
-                                <span className="text-white/40 text-[10px] font-mono">22:41</span>
+                                <span className="text-white/40 text-[10px] font-mono">
+                                    <CurrentTime />
+                                </span>
                                 <div className="flex gap-1 items-center">
                                     <div className="w-3 h-1.5 rounded-sm bg-yellow-400/60" />
                                     <div className="w-0.5 h-1.5 rounded-sm bg-yellow-400/40" />
