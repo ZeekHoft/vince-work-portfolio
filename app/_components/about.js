@@ -1,203 +1,187 @@
-
 import myLocalFont from './globalfont';
-import Animation from './animation';
-import { TextAnimation, NameAnimation, BlurAnimation } from './animation';
+import { BlurAnimation } from './animation';
 import DisplaySkills from './displayskills';
 
+import { MdCode, MdAnalytics, MdCloud } from "react-icons/md";
+import { SiReact } from "react-icons/si";
+import { FaGamepad } from "react-icons/fa";
 
-
-import { MdCode, MdPhoneIphone, MdStorage, MdCloud, MdBuild, MdAnalytics, MdSmartToy } from "react-icons/md";
-import { SiReact, SiGit } from "react-icons/si";
-import { FaGamepad, FaDesktop, FaLayerGroup } from "react-icons/fa";
-
-const ProfilePic = ({ imgSrc, context }) => {
-    return (
-
-        <div className='flex justify-center md:justify-start pt-20 md:pt-10 '>
-            <img
-                className=" shadow-lg  relative md:flex md:items-center bg-slate-900/40 rounded-[24px] p-6 shadow-2xl backdrop-blur-md border border-white/10
-                rounded-full transition-all duration-500 hover:bg-slate-900/80 hover:border-yellow-400/40 hover:shadow-[0_0_80px_rgba(250,250,250,0.1)] overflow-hidden"
-
-                src={imgSrc}
-                alt={context}
-            />
-        </div>
-    );
-};
 export default function About() {
     return (
-        <div>
-            <div className={`w-full tracking-wider flex flex-col p-5 md:flex-row md:gap-10 md:pl-20 md:pr-20 md:pt-20 md:pb-10 ${myLocalFont.className}`}>
+        <div className={`w-full tracking-wider flex flex-col items-start ${myLocalFont.className}`}>
 
-                <div className='flex-shrink-0 md:w-1/4'>
-                    <Animation>
-                        <ProfilePic imgSrc="/me6.jpg" context="profile picture" />
-                    </Animation>
+            {/* MASSIVE HEADER */}
+            <div className="w-full border-b-[8px] border-yellow-400 pb-4 mb-10 overflow-hidden">
+                <BlurAnimation>
+                    <h1 className="text-zinc-700 font-black text-[12vw] leading-[0.8] tracking-tighter uppercase whitespace-nowrap ">
+                        ABOUT <span className="text-yellow-400">ME</span>
+                    </h1>
+                </BlurAnimation>
+                <BlurAnimation>
+                    <h2 className="text-white font-black text-[10vw] leading-[0.85] tracking-tighter uppercase mt-2 break-words">
+                        FRANCIS VINCE
+                        <br />
+                        JACA.
+                    </h2>
+                </BlurAnimation>
+            </div>
+
+            <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-10">
+                {/* LEFT/TOP: Text content */}
+                <div className="lg:col-span-8 flex flex-col space-y-10">
+
+                    <div className="border-[4px] border-white/20 p-6 md:p-10 relative hover:border-yellow-400 transition-colors duration-300">
+                        <div className="absolute -top-[14px] left-6 bg-yellow-400 text-black px-3 py-0.5 font-bold text-sm tracking-widest uppercase">
+                            Mission Statement
+                        </div>
+                        <p className="text-xl md:text-4xl font-bold leading-tight text-white/90">
+                            I am a game, mobile, software, and web developer with a core mission: building technology that targets <span className="text-yellow-400 bg-white/10 px-2 italic">"THE 17 GOALS | Sustainable Development"</span>.
+                        </p>
+                    </div>
+
+                    <div className="border-[4px] border-white/5 p-6 md:p-10 relative">
+                        <p className="text-lg md:text-2xl text-zinc-400 leading-relaxed font-bold uppercase tracking-wide">
+                            I've spent my career working <span className="text-white">remotely, </span>helping businesses get where they need to go.
+                            I'm currently looking for my next challenge—whether that's full-time, part-time, or
+                            a specific project. I genuinely love what I do, and I'm looking to bring that energy to a
+                            team that's ready to grow. If you need someone who's all-in on making things happen, <span className="text-yellow-400">Let's talk</span>
+
+
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t-[4px] border-zinc-800">
+                        <div className="p-8 bg-yellow-400 text-black font-black flex flex-col justify-center">
+                            <span className="text-[5rem] leading-none tracking-tighter mb-2">3+</span>
+                            <span className="text-2xl leading-tight uppercase">Months Professional Engagement</span>
+                        </div>
+                        <div className="p-8 border-[4px] border-zinc-800 flex flex-col justify-center text-zinc-300">
+                            <p className="text-xl font-bold uppercase tracking-wider leading-snug">
+                                AI-powered content generation systems, GA4 data analytics, and technical SEO auditing.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-
-                <div className="md:w-3/4">
-                    <div className="text-center pt-5 md:text-left md:pt-10">
-                        <h1 className="text-2xl md:text-3xl font-bold textGray">
-                            <BlurAnimation> Hi I'm</BlurAnimation>
-
-                            <span className="text-2xl md:text-3xl h1fontChangeName font-bold">
-                                <BlurAnimation> Francis Vince Jaca,</BlurAnimation>
-
-                            </span>
-                        </h1>
-                        <br />
-                        <BlurAnimation>
-                            {/* <TextAnimation> */}
-                            <p className="pt-5 pb-5 text-lg md:text-xl space-y-4 textGray">
-                                I am a game, mobile, software, and web developer with a core mission: building technology that targets the
-                                <span className='h1fontChangeName font-bold'> "THE 17 GOALS | Sustainable Development"</span>.
-
-                                Currently, I am developing a startup application called
-                                <span className='h1fontChangeName font-bold'> "DAPPLI"</span>,
-                                proudly affiliated with and supported by <span className='h1fontChangeName font-bold'>DOST TBI</span> through
-                                <span className='h1fontChangeName font-bold'> "CPUGAD"</span>.
-
-                                Beyond core development, I thrive in high-pressure environments like hackathons, which have sharpened my skills in rapid prototyping, pitching, and teamwork. My team also recently completed
-                                <span className='h1fontChangeName font-bold'> "Deception Detector"</span>,
-                                a research-driven project designed to combat misinformation in the Philippines. This project led us to compete in the Google Solution Challenge (2024) and Visayas Solutions (2024), and most recently, I was selected as one of the Top 6 Lightning Speakers in Cebu (2025).
-                            </p>
-
-                            <p className="pt-5 pb-5 text-lg md:text-xl space-y-4 textGray">
-                                During my internship, I had the opportunity to work within a professional development environment across a
-                                <span className='h1fontChangeName font-bold'> 3-month engagement</span>.
-                                My first project involved building an
-                                <span className='h1fontChangeName font-bold'> AI-powered content generation system </span>
-                                leveraging automation workflows and large language models to produce SEO and AEO-optimized blog content,
-                                with a focus on prompt engineering, Google Search Console integration, and organic search visibility.
-
-                                The latter half of my internship shifted toward
-                                <span className='h1fontChangeName font-bold'> data analytics and technical SEO</span>
-                                working directly with client websites to extract and visualize performance data using
-                                <span className='h1fontChangeName font-bold'> GA4, Looker Studio, and automated reporting pipelines</span>.
-                                I also conducted structured backlink audits across multiple client properties, identifying and documenting
-                                broken links and remediation strategies using industry-standard SEO tooling.
-                            </p>
-                            <div>
-                                <h1 className='h1fontChangeName font-bold pb-5 text-lg md:text-xl'> Skills & Tools</h1>
-                                <div className='grid grid-cols-3 gap-5'>
-
-
-                                    <DisplaySkills
-                                        Icon={SiReact}
-                                        title={"Web & App Stack"}
-                                        programlang={[
-                                            { name: 'React', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Next.js', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Tailwind CSS', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'shadcn/ui', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Flutter', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Flask', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'FastAPI', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'BetterAuth', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'XAMPP / Apache', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Supabase', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Neon (PostgreSQL)', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Firebase', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                            { name: 'Drizzle ORM', bgColor: '#022C22', borderColor: '#10B981', textColor: '#A7F3D0' },
-                                        ]}
-                                    />
-                                    <DisplaySkills
-                                        Icon={MdAnalytics}
-                                        title={"Analytics & AI"}
-                                        programlang={[
-                                            { name: 'Google Analytics', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Google Search Console', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Looker Studio', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Ahrefs', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'AI image & video', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'N8N', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'PyAutoGUI', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Prompt Engineering', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-                                            { name: 'Ollama', bgColor: '#1a1219', borderColor: '#F43F5E', textColor: '#FECDD3' },
-
-                                        ]}
-                                    />
-                                    <DisplaySkills
-                                        Icon={FaGamepad}
-                                        title={"Other Platforms"}
-                                        programlang={[
-                                            { name: 'Pygame', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Godot', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Textual TUI', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Tkinter', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Visual Studio', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Android Studio', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Pycharm', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Jetbrains', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-                                            { name: 'Google Antigravit', bgColor: '#1E1034', borderColor: '#A855F7', textColor: '#E9D5FF' },
-
-
-                                        ]}
-                                    />
-
-                                    <DisplaySkills
-                                        Icon={MdCloud}
-                                        title={"DevOps & Tools"}
-                                        programlang={[
-                                            { name: 'AWS', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Vercel', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Railway', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Docker', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'Git', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'GitHub', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'npm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                            { name: 'pnpm', bgColor: '#1C1917', borderColor: '#F59E0B', textColor: '#FDE68A' },
-                                        ]}
-                                    />
-
-
-
-                                    <DisplaySkills
-                                        Icon={MdCode}
-                                        title={"Languages"}
-                                        programlang={[
-                                            { name: 'Python', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'JavaScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'TypeScript', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'Java', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'C#', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'Dart', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                            { name: 'HTML & CSS', bgColor: '#1E1B4B', borderColor: '#4F46E5', textColor: '#C7D2FE' },
-                                        ]}
-                                    />
-                                </div>
-
-
+                {/* RIGHT/BOTTOM: Image Placeholder shape and stats */}
+                <div className="lg:col-span-4 flex flex-col space-y-8">
+                    <BlurAnimation>
+                        <div className="w-full aspect-[3/4] border-[8px] border-yellow-400 relative overflow-hidden group grayscale hover:grayscale-0 transition-all duration-700">
+                            <img src="/me6.jpg" alt="Vince Intro" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div className="absolute inset-0 border-[8px] border-white/20 mix-blend-overlay"></div>
+                            {/* Brutalist tape/tag */}
+                            <div className="absolute top-6 -left-12 bg-white text-black px-14 py-1.5 font-black transform -rotate-45 text-sm uppercase tracking-[0.3em] z-10 shadow-[4px_4px_0_0_rgba(250,204,21,1)]">
+                                DEVELOPER
                             </div>
-                            {/* </TextAnimation> */}
-                        </BlurAnimation>
+                        </div>
+                    </BlurAnimation>
+
+                    <div className="border-[4px] border-white/10 p-6 hover:border-yellow-400/50 transition-colors">
+                        <p className="text-yellow-400 font-bold text-sm tracking-[0.2em] uppercase mb-4">Achievements / Milestones</p>
+                        <ul className="text-white text-lg font-bold flex flex-col space-y-3 uppercase leading-tight tracking-wider">
+                            <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Google Solution Challenge (2024)</li>
+                            <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Competed in Visayas Solutions (2024)</li>
+                            <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Competed in Visayas Solutions (2025)</li>
+                            <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Won the 'Apex' & 'Smart Nutrition' for DAPPLI (2025)</li>
+                            <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Awarded 2nd Place in Advance Technologies Category (2026)</li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
 
+            {/* SKILLS SECTION */}
+            <div className="w-full mt-32 pt-10">
+                <BlurAnimation>
+                    <h2 className="text-5xl md:text-8xl font-black text-transparent [-webkit-text-stroke:2px_white] hover:[-webkit-text-stroke:2px_#facc15] transition-all uppercase tracking-tighter mb-12">
+                        SKILLS_&_TOOLS
+                    </h2>
+                </BlurAnimation>
+
+                <div className="flex flex-col space-y-6">
+                    <DisplaySkills
+                        Icon={SiReact}
+                        title={"Web & App Stack"}
+                        programlang={[
+                            { name: 'React', textColor: '#A7F3D0' },
+                            { name: 'Next.js', textColor: '#ffffff' },
+                            { name: 'Tailwind CSS', textColor: '#38bdf8' },
+                            { name: 'shadcn/ui', textColor: '#ffffff' },
+                            { name: 'Flutter', textColor: '#027dfd' },
+                            { name: 'Flask', textColor: '#ffffff' },
+                            { name: 'FastAPI', textColor: '#05998b' },
+                            { name: 'BetterAuth', textColor: '#fbbf24' },
+                            { name: 'XAMPP / Apache', textColor: '#f97316' },
+                            { name: 'Supabase', textColor: '#3ecf8e' },
+                            { name: 'Neon (PostgreSQL)', textColor: '#00e599' },
+                            { name: 'Firebase', textColor: '#ff9100' },
+                            { name: 'Drizzle ORM', textColor: '#c5f200' },
+                        ]}
+                    />
+
+                    <DisplaySkills
+                        Icon={MdAnalytics}
+                        title={"Analytics & AI"}
+                        programlang={[
+                            { name: 'Google Analytics', textColor: '#fca5a5' },
+                            { name: 'Google Search Console', textColor: '#fca5a5' },
+                            { name: 'Looker Studio', textColor: '#fca5a5' },
+                            { name: 'Ahrefs', textColor: '#fca5a5' },
+                            { name: 'AI image & video', textColor: '#fca5a5' },
+                            { name: 'N8N', textColor: '#fca5a5' },
+                            { name: 'PyAutoGUI', textColor: '#fca5a5' },
+                            { name: 'Prompt Engineering', textColor: '#fca5a5' },
+                            { name: 'Ollama', textColor: '#fca5a5' },
+                        ]}
+                    />
+
+                    <DisplaySkills
+                        Icon={FaGamepad}
+                        title={"Other Platforms"}
+                        programlang={[
+                            { name: 'Pygame', textColor: '#d8b4fe' },
+                            { name: 'Godot', textColor: '#d8b4fe' },
+                            { name: 'Textual TUI', textColor: '#d8b4fe' },
+                            { name: 'Tkinter', textColor: '#d8b4fe' },
+                            { name: 'Visual Studio', textColor: '#d8b4fe' },
+                            { name: 'Android Studio', textColor: '#d8b4fe' },
+                            { name: 'Pycharm', textColor: '#d8b4fe' },
+                            { name: 'Jetbrains', textColor: '#d8b4fe' },
+                        ]}
+                    />
+
+                    <DisplaySkills
+                        Icon={MdCloud}
+                        title={"DevOps & Tools"}
+                        programlang={[
+                            { name: 'AWS', textColor: '#fcd34d' },
+                            { name: 'Vercel', textColor: '#ffffff' },
+                            { name: 'Railway', textColor: '#fcd34d' },
+                            { name: 'Docker', textColor: '#60a5fa' },
+                            { name: 'Git', textColor: '#fcd34d' },
+                            { name: 'GitHub', textColor: '#ffffff' },
+                            { name: 'npm', textColor: '#fcd34d' },
+                            { name: 'pnpm', textColor: '#fcd34d' },
+                        ]}
+                    />
+
+                    <DisplaySkills
+                        Icon={MdCode}
+                        title={"Languages"}
+                        programlang={[
+                            { name: 'Python', textColor: '#93c5fd' },
+                            { name: 'JavaScript', textColor: '#fef08a' },
+                            { name: 'TypeScript', textColor: '#93c5fd' },
+                            { name: 'Java', textColor: '#fca5a5' },
+                            { name: 'C#', textColor: '#d8b4fe' },
+                            { name: 'Dart', textColor: '#93c5fd' },
+                            { name: 'HTML & CSS', textColor: '#93c5fd' },
+                        ]}
+                    />
+                </div>
+            </div>
+
         </div>
-
-
-
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -44,6 +44,8 @@ export default function Contact() {
                             Get in touch
                         </a>
                     </Magnetic>
+
+
                 </div>
             </div>
 
@@ -54,7 +56,7 @@ export default function Contact() {
                                     transition-all duration-300 hover:-translate-y-0.5">
                         LinkedIn</a></Magnetic>
                     <Magnetic strength={0.5}><a href="https://www.facebook.com/francisvince.jaca" target="_blank" rel="noopener noreferrer" className="group relative text-sm tracking-widest text-yellow-400
-                                    drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]
+                                    drop-shadow-[0_0_5px_rgba(250,204,21,0.4)] 
                                     transition-all duration-300 hover:-translate-y-0.5">
                         Facebook</a></Magnetic>
                     <Magnetic strength={0.5}><a href="mailto:francisvincecj@gmail.com" className="group relative text-sm tracking-widest text-yellow-400
