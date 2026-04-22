@@ -146,7 +146,7 @@ const Services = () => {
                 <div className="relative">
 
                     {/* Outer tablet body */}
-                    <div className="relative bg-zinc-900 rounded-[40px] p-4 shadow-2xl shadow-yellow-400/10 mr-5 ml-5"
+                    <div className="relative bg-zinc-900 rounded-[40px] p-4 shadow-2xl shadow-yellow-400/10 "
                         style={{
                             border: '2px solid rgba(250, 204, 21, 0.15)',
                             boxShadow: '0 0 60px rgba(250,204,21,0.05), 0 30px 80px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.05)'
