@@ -12,19 +12,18 @@ const navLinks = [
 ];
 
 export default function Header() {
-    const pathname = usePathname();
 
     return (
         <NavDropDown>
             <nav className={`${myLocalFont.className} fixed top-4 w-screen flex justify-center items-center px-4 z-100`}>
                 <div className="flex justify-between items-center w-full max-w-5xl mx-auto px-6 py-3 rounded-2xl
                     border border-yellow-400/10 bg-black/40 backdrop-blur-md shadow-[0_0_30px_rgba(241,198,4,0.05)]
-                    transition-all duration-300">
+                    transition-all duration-300 ">
 
                     {/* Logo / Name */}
                     <Magnetic strength={0.4}>
 
-                        <Link href="#" className="flex items-center gap-3 group">
+                        <Link href="#" className="flex items-center gap-3 group p-2">
                             <span className="h-2 w-2 rounded-full bg-[#f1c604] shadow-[0_0_10px_rgba(241,198,4,0.6)]" />
                             <span className="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase transition-colors duration-300 group-hover:text-white">
                                 FVJ
@@ -35,7 +34,7 @@ export default function Header() {
                     {/* Links */}
                     <div className="flex gap-8 uppercase ">
                         {navLinks.map(({ href, label }) => (
-                            <Magnetic strength={0.4}>
+                            <Magnetic strength={0.4} key={href}>
 
                                 <Link
                                     href={href}
@@ -54,14 +53,11 @@ export default function Header() {
                         ))}
                     </div>
 
-                    <div className="flex items-center  gap-1.5 text-xs font-bold tracking-widest uppercase border border-white/10 bg-white/5 px-6 py-3 rounded-full transition-all duration-500 text-white">
-                        <span className="h-1.5 w-1.5 rounded-full bg-yellow-400 animate-pulse" />
-                        <span className="text-yellow-400  animate-pulse drop-shadow-[0_0_5px_rgba(250,204,21,0.4)]text-xs tracking-widest uppercase">
-
-                            Available
-                        </span>
-
-                    </div>
+                    <Magnetic strength={0.3}>
+                        <Link href="#contact" className="text-xs font-bold tracking-widest uppercase border border-white/10 bg-white/5 px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-500 text-yellow-400">
+                            Let's Talk
+                        </Link>
+                    </Magnetic>
 
                 </div>
             </nav>

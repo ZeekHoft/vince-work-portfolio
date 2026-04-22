@@ -69,7 +69,7 @@ const IconWrapper = ({ Icon }) => (
 
 const Services = () => {
     const AppCompnents = [
-        <WidgetProfessional key="pro work" value="Proffessional Projects" />,
+        <WidgetProfessional key="pro work" value="Professional Projects" />,
         <WidgetHackathon key="game work" value="Hackathon Projects" />,
     ]
 
@@ -134,7 +134,7 @@ const Services = () => {
                 <div className="relative">
 
                     {/* Outer tablet body */}
-                    <div className="relative bg-zinc-900 rounded-[40px] p-4 shadow-2xl shadow-yellow-400/10 mr-20 ml-20"
+                    <div className="relative bg-zinc-900 rounded-[40px] p-4 shadow-2xl shadow-yellow-400/10 mr-5 ml-5"
                         style={{
                             border: '2px solid rgba(250, 204, 21, 0.15)',
                             boxShadow: '0 0 60px rgba(250,204,21,0.05), 0 30px 80px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.05)'
@@ -150,7 +150,7 @@ const Services = () => {
                         {/* Screen bezel */}
                         <div className="bg-black rounded-[24px] overflow-hidden relative bg-cover bg-center"
                             style={{
-                                backgroundImage: "url('/tablet_bg2.jpg')",
+                                backgroundImage: "url('/tablet_bg3.jpg')",
                                 border: '1px solid rgb(0, 0, 0)',
                                 boxShadow: 'inset 0 0 30px rgba(0,0,0,0.5)'
                             }}>
@@ -176,14 +176,12 @@ const Services = () => {
                                                 <CarouselItem key={index}>
                                                     <div className="p-1">
                                                         {/* You can still wrap them in a Card if you want a consistent border */}
-                                                        <Card className="bg-zinc-950/80 bg-transparent backdrop-blur-sm border-zinc-800">
-                                                            <h3 className="mb-2 mt-4 text-xl font-bold h1fontChangeName text-center text-white">{SlideComponent.props.value}</h3>
+                                                        <h3 className="mb-2 mt-4 text-xl font-bold uppercase text-center text-white">{SlideComponent.props.value}</h3>
 
-                                                            <CardContent className="flex items-center justify-center">
+                                                        <CardContent className="flex items-center justify-center">
 
-                                                                {SlideComponent}
-                                                            </CardContent>
-                                                        </Card>
+                                                            {SlideComponent}
+                                                        </CardContent>
                                                     </div>
                                                 </CarouselItem>
                                             ))}
