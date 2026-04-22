@@ -176,12 +176,14 @@ const Services = () => {
                                                 <CarouselItem key={index}>
                                                     <div className="p-1">
                                                         {/* You can still wrap them in a Card if you want a consistent border */}
-                                                        <h3 className="mb-2 mt-4 text-xl font-bold uppercase text-center text-white">{SlideComponent.props.value}</h3>
+                                                        <Card className="bg-zinc-950/80 bg-transparent backdrop-blur-sm border-zinc-800 h-160">
+                                                            <h3 className="mb-2 mt-4 text-xl font-bold uppercase text-center text-white">{SlideComponent.props.value}</h3>
 
-                                                        <CardContent className="flex items-center justify-center">
+                                                            <CardContent className="flex items-center justify-center">
 
-                                                            {SlideComponent}
-                                                        </CardContent>
+                                                                {SlideComponent}
+                                                            </CardContent>
+                                                        </Card>
                                                     </div>
                                                 </CarouselItem>
                                             ))}
