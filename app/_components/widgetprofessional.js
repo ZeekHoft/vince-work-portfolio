@@ -14,7 +14,7 @@ import SmoothScroll from "@/components/smoothscroll";
 export default function WidgetProfessional() {
     return (
         <>
-            <div className="grid grid-cols-2 gap-20 pt-10 lg:w-300 place-items-center md:grid-cols-3 lg:grid-cols-5 gap-8 m-5 md:m-10 lg:m-20 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-4 md:p-8 w-full place-items-center  md:m-10 lg:m-20">
 
 
                 <ListProjects />
@@ -22,11 +22,11 @@ export default function WidgetProfessional() {
                 <Dialog>
                     <DialogTrigger asChild>
                         <div className="group cursor-pointer flex flex-col items-center gap-2 w-[80px]">
-                            <div className="w-[110px] h-[110px] rounded-[16px] overflow-hidden 
-                                                    border border-white/10 shadow-lg shadow-black/30
-                                                    transition-all duration-200 
-                                                    group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-black/40
-                                                    group-active:scale-95">
+                            <div className="w-[72px] h-[72px] md:w-[110px] md:h-[110px] rounded-[16px] overflow-hidden 
+                        border border-white/10 shadow-lg shadow-black/30
+                        transition-all duration-200  
+                        group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-yellow-400/20
+                        group-active:scale-95 ">
                                 <img
                                     src={"./thumbnail.png"}
                                     className="w-full h-full object-cover"
@@ -46,7 +46,7 @@ export default function WidgetProfessional() {
                     >
                         <DialogTitle className="text-white text-4xl h1fontChangeName text-center">Certificates Gallery</DialogTitle>
                         <div
-                            className="-mx-6 max-h-[70vh] overflow-y-auto px-6"
+                            className="-mx-6 max-h-[72vh] overflow-y-auto px-6"
                             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                             onWheel={(e) => e.stopPropagation()}
                         >

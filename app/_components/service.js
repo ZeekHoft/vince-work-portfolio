@@ -21,6 +21,7 @@ import 'react-device-frameset/styles/marvel-devices.min.css'
 import CurrentTime from "@/components/ui/current-time";
 import WidgetProfessional from "./widgetprofessional";
 import WidgetHackathon from "./widgethackathon";
+import WidgetImages from "./widgetimages";
 
 const IconWrapper = ({ Icon }) => (
     <div className="group relative mb-6">
@@ -63,6 +64,8 @@ const Services = () => {
     const AppCompnents = [
         <WidgetProfessional key="pro work" value="Professional Projects" />,
         <WidgetHackathon key="game work" value="Hackathon Projects" />,
+        <WidgetImages key="game work" value="Highlights" />,
+
     ]
 
 
@@ -185,7 +188,7 @@ const Services = () => {
                                                 <CarouselItem key={index}>
                                                     <div className="p-1">
                                                         {/* You can still wrap them in a Card if you want a consistent border */}
-                                                        <Card className="bg-zinc-950/80 bg-transparent backdrop-blur-sm border-zinc-800 h-160">
+                                                        <Card className="bg-zinc-950/80 bg-transparent backdrop-blur-sm border-zinc-800 h-180">
                                                             <h3 className="mb-2 mt-4 text-xl font-bold uppercase text-center text-white">{SlideComponent.props.value}</h3>
                                                             <CardContent className="flex items-center justify-center">
 
