@@ -7,7 +7,9 @@ import { MdAppSettingsAlt } from "react-icons/md";
 
 import { FaDatabase, FaServer, FaGamepad } from "react-icons/fa";
 import myLocalFont from './globalfont';
-import { NameAnimation, TextAnimation, BlurAnimation, ComponentBlurAnimation } from "./animation";
+import { NameAnimation, TextAnimation, BlurAnimation, ComponentBlurAnimation, TabletBootAnimation } from "./animation";
+
+
 import Displayprojct from "./displayprojct";
 import DisplayCertificate from "./displaycertificate";
 
@@ -61,6 +63,8 @@ const IconWrapper = ({ Icon }) => (
 //     { key: 'service7', value: 'SEO & Data Analytics ', Icon: FaServer, description: 'Driving organic growth through technical SEO audits, broken link reclamation, and data visualization using GA4 and Looker Studio.' },
 
 // ];
+
+
 
 
 const Services = () => {
@@ -144,37 +148,38 @@ const Services = () => {
                         </div>
 
                         {/* Screen bezel */}
-                        <div className="bg-black rounded-[24px] overflow-hidden"
+                        <div className="bg-black rounded-[24px] overflow-hidden relative bg-cover bg-center"
                             style={{
+                                backgroundImage: "url('/tablet_bg2.jpg')",
                                 border: '1px solid rgba(255, 204, 0, 0.08)',
                                 boxShadow: 'inset 0 0 30px rgba(0,0,0,0.5)'
                             }}>
+                            <TabletBootAnimation>
 
-                            {/* Fake iOS status bar */}
-                            <div className="flex justify-between items-center px-6 py-2 bg-black/80">
-                                <span className="text-white/40 text-[15px] font-mono">
-                                    <CurrentTime />
-                                </span>
-                                <div className="flex gap-1 items-center">
-                                    <div className="w-8 h-2.5 rounded-sm bg-yellow-400/60" />
-                                    <div className="w-0.5 h-2.5 rounded-sm bg-yellow-400/40" />
+                                {/* Fake iOS status bar */}
+                                <div className="flex justify-between items-center px-6 py-2 bg-black/80 backdrop-blur-md relative z-20">
+                                    <span className="text-white/80 text-[15px] font-mono font-bold">
+                                        <CurrentTime />
+                                    </span>
+                                    <div className="flex gap-1 items-center">
+                                        <div className="w-8 h-2.5 rounded-sm bg-yellow-400/80" />
+                                        <div className="w-0.5 h-2.5 rounded-sm bg-yellow-400/60" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            {/* Your app grid content */}
-                            <div className="bg-black p-6 ">
+                                {/* Your app grid content */}
+                                <div className="p-6 relative z-10">
 
-                                <ComponentBlurAnimation>
                                     <Carousel className="grid grid-cols-1">
                                         <CarouselContent>
                                             {AppCompnents.map((SlideComponent, index) => (
                                                 <CarouselItem key={index}>
-                                                    <div className="">
+                                                    <div className="p-1">
                                                         {/* You can still wrap them in a Card if you want a consistent border */}
-                                                        <Card className="bg-zinc-950 border-zinc-800">
-                                                            <h3 className="mb-2 text-xl font-bold h1fontChangeName text-center ">{SlideComponent.props.value}</h3>
+                                                        <Card className="bg-zinc-950/80 bg-transparent backdrop-blur-sm border-zinc-800">
+                                                            <h3 className="mb-2 mt-4 text-xl font-bold h1fontChangeName text-center text-white">{SlideComponent.props.value}</h3>
 
-                                                            <CardContent className="flex items-center justify-center ">
+                                                            <CardContent className="flex items-center justify-center">
 
                                                                 {SlideComponent}
                                                             </CardContent>
@@ -187,13 +192,14 @@ const Services = () => {
                                         <CarouselNext /> */}
                                     </Carousel>
 
-                                </ComponentBlurAnimation>
-                            </div>
+                                </div>
 
-                            {/* Fake home bar */}
-                            <div className="flex justify-center py-3 bg-black">
-                                <div className="w-24 h-1 rounded-full bg-white/20" />
-                            </div>
+                                {/* Fake home bar */}
+                                <div className="flex justify-center py-3 bg-black/50 backdrop-blur-sm relative z-20">
+                                    <div className="w-24 h-1 rounded-full bg-white/40" />
+                                </div>
+                            </TabletBootAnimation>
+
                         </div>
 
                         {/* Side buttons */}

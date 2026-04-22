@@ -50,7 +50,7 @@ export function AnimatedBeams() {
                                 variants={slideUp} custom={0} initial="initial" animate="open"
                                 className="text-[14vw] lg:text-[12vw] font-bold tracking-tighter m-0 p-0"
                             >
-                                FRANCISs
+                                FRANCIS
                             </motion.h1>
                         </div>
                         <div className="overflow-hidden -mt-[2%]">
@@ -70,14 +70,26 @@ export function AnimatedBeams() {
                     transition={{ delay: 1, duration: 1 }}
                     className="absolute bottom-10 right-10 flex flex-col items-center gap-3 z-20"
                 >
-                    <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500 [writing-mode:vertical-lr] rotate-180">Scroll</span>
                     <div className="w-[1px] h-16 bg-gray-800 overflow-hidden relative">
                         <motion.div
                             className="absolute top-0 w-full h-full bg-[#f1c604]"
                             animate={{ y: ["-100%", "100%"] }}
                             transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
                         />
+
                     </div>
+
+                    <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500 [writing-mode:vertical-lr] rotate-180">Scroll</span>
+
+                    <div className="w-[1px] h-16 bg-gray-800 overflow-hidden relative">
+                        <motion.div
+                            className="absolute top-0 w-full h-full bg-[#f1c604]"
+                            animate={{ y: ["-100%", "100%"] }}
+                            transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
+                        />
+
+                    </div>
+
                 </motion.div>
             </section>
         </div>
