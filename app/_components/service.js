@@ -151,7 +151,7 @@ const Services = () => {
                         <div className="bg-black rounded-[24px] overflow-hidden relative bg-cover bg-center"
                             style={{
                                 backgroundImage: "url('/tablet_bg2.jpg')",
-                                border: '1px solid rgba(255, 204, 0, 0.08)',
+                                border: '1px solid rgb(0, 0, 0)',
                                 boxShadow: 'inset 0 0 30px rgba(0,0,0,0.5)'
                             }}>
                             <TabletBootAnimation>
