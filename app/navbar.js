@@ -30,7 +30,7 @@ export default function Header() {
                     <Link href="#" className="flex items-center gap-3 group">
                         <span className="h-2 w-2 rounded-full bg-[#f1c604] shadow-[0_0_10px_rgba(241,198,4,0.6)]" />
                         <span className="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase transition-colors duration-300 group-hover:text-[#f1c604]">
-                            Francis Vince Jaca
+                            Vince
                         </span>
                     </Link>
                 </Magnetic>

@@ -6,6 +6,7 @@ import * as React from "react"
 import myLocalFont from './globalfont';
 import { NameAnimation, TextAnimation, BlurAnimation, ComponentBlurAnimation, TabletBootAnimation } from "./animation";
 
+
 import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
@@ -22,6 +23,7 @@ import CurrentTime from "@/components/ui/current-time";
 import WidgetProfessional from "./widgetprofessional";
 import WidgetHackathon from "./widgethackathon";
 import WidgetImages from "./widgetimages";
+
 
 const IconWrapper = ({ Icon }) => (
     <div className="group relative mb-6">
@@ -166,6 +168,7 @@ const Services = () => {
                                 border: '1px solid rgb(0, 0, 0)',
                                 boxShadow: 'inset 0 0 30px rgba(0,0,0,0.5)'
                             }}>
+
                             <TabletBootAnimation>
 
                                 {/* Fake iOS status bar */}

@@ -43,8 +43,8 @@ export function AnimatedBeams() {
                     </div>
                 </div>
 
-                <motion.div style={{ y }} className="w-full flex justify-between items-end z-20">
-                    <div className="flex flex-col text-[#f4f4f5] leading-[0.85]">
+                <motion.div style={{ y }} className="w-full  justify-between items-end z-20">
+                    <div className="flex flex-col text-[#f4f4f5] leading-[0.85] ">
                         <div className="overflow-hidden">
                             <motion.h1
                                 variants={slideUp} custom={0} initial="initial" animate="open"
@@ -103,5 +103,3 @@ export function AnimatedBeams() {
 
 
 
-
-export default AnimatedBeams

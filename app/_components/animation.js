@@ -174,43 +174,62 @@ export function TextSplit({ text, type, delay }) {
 export function TabletBootAnimation({ children }) {
     const [isBooting, setIsBooting] = React.useState(true);
     const [showLogo, setShowLogo] = React.useState(false);
+    const [hastStarted, setHasStarted] = React.useState(false);
+    const containerVariants = {
+        hidden: { opacity: 0, filter: 'blur(30px)', y: 20 },
+        visible: {
+            opacity: 1,
+            filter: 'blur(0px)',
+            y: 0,
+            transition: { duration: 0.8, delay: 0.2 }
+        },
+    };
+    const startBootSequence = () => {
+        if (hastStarted) return;
+        setHasStarted(true);
+        setTimeout(() => setShowLogo(true), 300);
+        setTimeout(() => setShowLogo(false), 2000);
+        setTimeout(() => setIsBooting(false), 2600);
 
-    React.useEffect(() => {
-        const showTimer = setTimeout(() => setShowLogo(true), 300);
-        const hideTimer = setTimeout(() => setShowLogo(false), 2000);
-        const bootTimer = setTimeout(() => setIsBooting(false), 2600);
-        return () => {
-            clearTimeout(showTimer);
-            clearTimeout(hideTimer);
-            clearTimeout(bootTimer);
-        };
-    }, []);
+    };
+
 
     return (
-        <div className="relative w-full h-full flex flex-col min-h-[400px]">
-            {/* We render the children always so they maintain the tablet width/height */}
-            <div className={`w-full h-full flex-grow transition-opacity duration-700 ${isBooting ? 'opacity-0 pointer-events-none' : 'opacity-100 animate-in fade-in zoom-in-95'}`}>
-                {children}
-            </div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            onViewportEnter={startBootSequence}
+            variants={containerVariants}
+        >
+            <div
+                className="relative w-full h-full flex flex-col min-h-[400px]">
+                {/* We render the children always so they maintain the tablet width/height */}
+                <div className={`w-full h-full flex-grow transition-opacity duration-700 ${isBooting ? 'opacity-0 pointer-events-none' : 'opacity-100 animate-in fade-in zoom-in-95'}`}>
+                    {children}
+                </div>
 
-            {isBooting && (
-                <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black rounded-b-[24px]">
-                    <div className={`transition-all duration-1000 ease-in-out transform flex flex-col items-center ${showLogo ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
-                        <h1 className="text-7xl font-extrabold text-white tracking-widest mb-10 h1fontChangeName"
-                            style={{
-                                textShadow: '0 0 40px rgba(250,204,21,0.5), 0 0 80px rgba(255,255,255,0.2)'
-                            }}>
-                            Welcome FVJ.
-                        </h1>
-                        <div className="w-40 h-1 bg-zinc-800 rounded-full overflow-hidden">
-                            <div className="h-full bg-yellow-400 rounded-full transition-all duration-[2000ms] ease-out"
-                                style={{ width: showLogo ? '100%' : '0%' }}
-                            />
+                {isBooting && (
+                    <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black rounded-b-[24px]">
+                        <div className={`transition-all duration-1000 ease-in-out transform flex flex-col items-center ${showLogo ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
+                            <h1 className="text-7xl font-extrabold text-white tracking-widest mb-10 h1fontChangeName"
+                                style={{
+                                    textShadow: '0 0 40px rgba(250,204,21,0.5), 0 0 80px rgba(255,255,255,0.2)'
+                                }}>
+                                Welcome FVJ.
+                            </h1>
+                            <div className="w-40 h-1 bg-zinc-800 rounded-full overflow-hidden">
+                                <div className="h-full bg-yellow-400 rounded-full transition-all duration-[2000ms] ease-out"
+                                    style={{ width: showLogo ? '100%' : '0%' }}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-            )}
-        </div>
+                )}
+
+            </div>
+        </motion.div>
+
+
     );
 };
 
