@@ -8,6 +8,7 @@ import BlurText from "@/components/ui/shadcn-io/blur-text";
 import TextPressure from "@/components/ui/shadcn-io/text-pressure";
 import { useMediaQuery } from "use-media-query-react";
 import { SplittingText } from "@/components/ui/shadcn-io/splitting-text";
+import { useTransition } from 'react';
 
 
 
@@ -200,16 +201,26 @@ export function TabletBootAnimation({ children }) {
             whileInView="visible"
             onViewportEnter={startBootSequence}
             variants={containerVariants}
+            viewport={{ once: true }}
         >
             <div
-                className="relative w-full h-full flex flex-col min-h-[400px]">
+                className="relative w-full h-full flex flex-col min-h-[400px]"
+                style={{
+                    backgroundSize: "cover",
+                    backgroundImage: "url('/tablet_bg3.jpg')",
+                    border: '1px solid rgb(0, 0, 0)',
+                    boxShadow: 'inset 0 0 30px rgba(0,0,0,0.5)'
+                }}>
                 {/* We render the children always so they maintain the tablet width/height */}
-                <div className={`w-full h-full flex-grow transition-opacity duration-700 ${isBooting ? 'opacity-0 pointer-events-none' : 'opacity-100 animate-in fade-in zoom-in-95'}`}>
+                <div className={`w-full h-full flex-grow transition-opacity duration-700 ${isBooting ? 'opacity-0 pointer-events-none' : 'opacity-100 animate-in fade-in zoom-in-95'}`
+
+                }>
                     {children}
                 </div>
 
                 {isBooting && (
-                    <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black rounded-b-[24px]">
+                    <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black rounded-b-[24px]"
+                    >
                         <div className={`transition-all duration-1000 ease-in-out transform flex flex-col items-center ${showLogo ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
                             <h1 className="text-7xl font-extrabold text-white tracking-widest mb-10 h1fontChangeName"
                                 style={{
@@ -227,7 +238,7 @@ export function TabletBootAnimation({ children }) {
                 )}
 
             </div>
-        </motion.div>
+        </motion.div >
 
 
     );
