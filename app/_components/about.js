@@ -2,7 +2,7 @@ import myLocalFont from './globalfont';
 import { BlurAnimation } from './animation';
 import DisplaySkills from './displayskills';
 
-import { MdCode, MdAnalytics, MdCloud } from "react-icons/md";
+import { MdCode, MdAnalytics, MdCloud, MdOutlineDesignServices } from "react-icons/md";
 import { SiReact } from "react-icons/si";
 import { FaGamepad } from "react-icons/fa";
 
@@ -147,6 +147,8 @@ export default function About() {
                             { name: 'Android Studio', textColor: '#d8b4fe' },
                             { name: 'Pycharm', textColor: '#d8b4fe' },
                             { name: 'Jetbrains', textColor: '#d8b4fe' },
+                            { name: 'Docker', textColor: '#d8b4fe' },
+
                         ]}
                     />
 
@@ -176,6 +178,19 @@ export default function About() {
                             { name: 'C#', textColor: '#d8b4fe' },
                             { name: 'Dart', textColor: '#93c5fd' },
                             { name: 'HTML & CSS', textColor: '#93c5fd' },
+                        ]}
+                    />
+                    <DisplaySkills
+                        Icon={MdOutlineDesignServices}
+                        title={"Graphic Design"}
+                        programlang={[
+                            { name: 'Canva', textColor: '#4289da' },
+                            { name: 'Pinterest', textColor: '#e93f61' },
+                            { name: 'Eleven Labs', textColor: '#989898' },
+                            { name: 'Blender', textColor: '#e87730' },
+                            { name: 'Spline', textColor: '#ff47f0' },
+
+
                         ]}
                     />
                 </div>
