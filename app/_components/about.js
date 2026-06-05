@@ -84,6 +84,8 @@ export default function About() {
                             <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Competed in Visayas Solutions (2025)</li>
                             <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Won the 'Apex' & 'Smart Nutrition' for DAPPLI (2025)</li>
                             <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Awarded 2nd Place in Advance Technologies Category (2026)</li>
+                            <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Grand Champions at the New Energy Nexus Hackathon (2026)</li>
+                            <li className="flex items-start gap-2"><span className="text-yellow-400">►</span> Venture Excellence Award (2026)</li>
 
                         </ul>
                     </div>

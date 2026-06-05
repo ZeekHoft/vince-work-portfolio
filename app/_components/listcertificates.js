@@ -6,6 +6,27 @@ export default function ListCertificates() {
     return (
         <>
             <DisplayCertificate
+                imgSrc={"./venture3.png"}
+                alt={"Venture Excellence Award"}
+                title={"Venture Excellence Award"}
+                context={"Honored to receive this special recognition for our venture, DAPPL, at Central Philippine University. The award highlights our progress beyond initial ideation toward long-term scalability, institutional stability, and operational maturity within the startup ecosystem."}
+                link={"https://www.facebook.com/photo?fbid=10215139301593310&set=pcb.10215139303753364"}
+            />
+            <DisplayCertificate
+                imgSrc={"./wattwise2.png"}
+                alt={"WattWise Grand Champion"}
+                title={"Grand Champion - Renewable Energy Access and Financing"}
+                context={"Awarded 1st Place and a PHP 30,000 cash prize at the energy hackathon for our AI-powered energy intelligence platform. The system leverages hybrid data models and contextual surveys to help Filipino households and MSMEs identify energy waste and lower their electricity bills."}
+                link={"https://www.facebook.com/photo/?fbid=122292448394191122&set=a.122115839402191122"}
+            />
+            <DisplayCertificate
+                imgSrc={"./AI cert.png"}
+                alt={"AI Enablement Program Certification"}
+                title={"AI Enablement Program Certification"}
+                context={"A certificate for AI Enablement, earned during my internship at Callbox, Inc. This certificate is earned through the use of automation tools and AI software to create instruments that would help make work easy, such as duplication checker, content creation, scraper and data cleaning."}
+                link={"https://www.linkedin.com/in/francis-vince-jaca-359532305/recent-activity/all/"}
+            />
+            <DisplayCertificate
                 imgSrc={"./research.jpg"}
                 alt={"cs50"}
                 title={"2nd Place Advance Technologies Award "}

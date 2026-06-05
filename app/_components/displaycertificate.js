@@ -26,7 +26,7 @@ const DisplayCertificate = ({ imgSrc, alt, title, link, iconlink, context, badge
                             </a> */}
                         </h3>
 
-                        <p className="text-gray-500 g-relaxed text-[0.95rem] mb-8 flex-grow md:pr-40 group-hover:text-zinc-300 transition-colors duration-500 ">
+                        <p className="text-gray-500 g-relaxed text-[18px] mb-8 flex-grow md:pr-40 group-hover:text-zinc-300 transition-colors duration-500 ">
                             {context}
 
                         </p>
@@ -37,7 +37,7 @@ const DisplayCertificate = ({ imgSrc, alt, title, link, iconlink, context, badge
                             </a>
 
 
-                            <a href="https://github.com/ZeekHoft" className="shrink-0 p-2 rounded-lg bg-white/5 border border-white/10 hover:border-yellow-400/50 hover:bg-yellow-400/10 transition-all duration-300">
+                            {/* <a href="https://github.com/ZeekHoft" className="shrink-0 p-2 rounded-lg bg-white/5 border border-white/10 hover:border-yellow-400/50 hover:bg-yellow-400/10 transition-all duration-300">
                                 <img
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                                     width="22"
@@ -45,7 +45,7 @@ const DisplayCertificate = ({ imgSrc, alt, title, link, iconlink, context, badge
                                     alt="github"
                                     className="invert opacity-70 group-hover:opacity-100"
                                 />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

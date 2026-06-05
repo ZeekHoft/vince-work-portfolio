@@ -44,7 +44,7 @@ export default function WidgetProfessional() {
                         // This prevents scroll from leaking to background
                         onWheel={(e) => e.stopPropagation()}
                     >
-                        <DialogTitle className="text-white text-4xl h1fontChangeName text-center">Certificates Gallery</DialogTitle>
+                        <DialogTitle className="text-white text-4xl h1fontChangeName text-center">Certificates & Achievements Gallery</DialogTitle>
                         <div
                             className="-mx-6 max-h-[72vh] overflow-y-auto px-6"
                             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
