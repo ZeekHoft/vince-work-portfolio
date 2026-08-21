@@ -2,7 +2,7 @@ import myLocalFont from './globalfont';
 import { BlurAnimation } from './animation';
 import DisplaySkills from './displayskills';
 
-import { MdCode, MdAnalytics, MdCloud, MdOutlineDesignServices } from "react-icons/md";
+import { MdCode, MdAnalytics, MdCloud, MdOutlineDesignServices, MdOutlineScreenSearchDesktop } from "react-icons/md";
 import { SiReact } from "react-icons/si";
 import { FaGamepad } from "react-icons/fa";
 
@@ -35,7 +35,9 @@ export default function About() {
                             Mission Statement
                         </div>
                         <p className="text-xl md:text-4xl font-bold leading-tight text-white/90">
-                            I am a game, mobile, software, and web developer with a core mission: building technology that targets <span className="text-yellow-400 bg-white/10 px-2 italic">"THE 17 GOALS | Sustainable Development"</span>.
+                            I am a Game, Mobile, Software, Web developer, AI prompt engineer and SEO specialist. I love building and creating things
+                            that can help business succeed.
+                            <span className="text-yellow-400 bg-white/10 px-2 italic">"Good is not enough, I need to be Great."</span>.
                         </p>
                     </div>
 
@@ -57,7 +59,7 @@ export default function About() {
                         </div>
                         <div className="p-8 border-[4px] border-zinc-800 flex flex-col justify-center text-zinc-300">
                             <p className="text-xl font-bold uppercase tracking-wider leading-snug">
-                                AI-powered content generation systems, GA4 data analytics, and technical SEO auditing.
+                                Developer, AI-powered content generation, GA4 data analytics, and technical SEO auditing.
                             </p>
                         </div>
                     </div>
@@ -151,6 +153,8 @@ export default function About() {
                             { name: 'Jetbrains', textColor: '#d8b4fe' },
                             { name: 'Docker', textColor: '#d8b4fe' },
 
+
+
                         ]}
                     />
 
@@ -159,13 +163,14 @@ export default function About() {
                         title={"DevOps & Tools"}
                         programlang={[
                             { name: 'AWS', textColor: '#fcd34d' },
-                            { name: 'Vercel', textColor: '#ffffff' },
+                            { name: 'Vercel', textColor: '#fcd34d' },
                             { name: 'Railway', textColor: '#fcd34d' },
-                            { name: 'Docker', textColor: '#60a5fa' },
                             { name: 'Git', textColor: '#fcd34d' },
-                            { name: 'GitHub', textColor: '#ffffff' },
+                            { name: 'GitHub', textColor: '#fcd34d' },
                             { name: 'npm', textColor: '#fcd34d' },
                             { name: 'pnpm', textColor: '#fcd34d' },
+                            { name: 'Follow Up Boss (FUB)', textColor: '#fcd34d' },
+
                         ]}
                     />
 
@@ -191,6 +196,20 @@ export default function About() {
                             { name: 'Eleven Labs', textColor: '#989898' },
                             { name: 'Blender', textColor: '#e87730' },
                             { name: 'Spline', textColor: '#ff47f0' },
+                            { name: 'KlingAI', textColor: '#ff47f0' },
+
+
+
+                        ]}
+                    />
+                    <DisplaySkills
+                        Icon={MdOutlineScreenSearchDesktop}
+                        title={"SEO"}
+                        programlang={[
+                            { name: 'SEO Backlinking', textColor: '#42daa2' },
+                            { name: 'SEO Profiling', textColor: '#42daa2' },
+                            { name: 'SEO Page Optimization', textColor: '#42daa2' },
+                            { name: 'SEO Content Creation', textColor: '#42daa2' },
 
 
                         ]}

@@ -8,7 +8,6 @@ import Contact from "./_components/contact"
 import About from "./_components/about";
 import AmazingImages from "./_components/images";
 
-
 export default function Home() {
   return (
 
@@ -22,13 +21,14 @@ export default function Home() {
 
         <section id="service" className=" min-h-screen">
           <Services />
+          <AmazingImages />
+
         </section>
 
         <section id="about" className="w-full tracking-wider flex flex-col p-5 md:flex-row md:gap-10 md:pl-20 md:pr-20 md:pt-20 md:pb-10">
           <About />
         </section>
         <section id="images" className="w-full max-w-7xl mx-auto   ">
-          <AmazingImages></AmazingImages>
 
         </section>
 
